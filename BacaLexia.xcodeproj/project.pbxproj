@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD7D9FBC254FD39A008FC254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FBB254FD39A008FC254 /* AppDelegate.swift */; };
+		CD7D9FBE254FD39A008FC254 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FBD254FD39A008FC254 /* SceneDelegate.swift */; };
+		CD7D9FC0254FD39A008FC254 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FBF254FD39A008FC254 /* ViewController.swift */; };
+		CD7D9FC3254FD39A008FC254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7D9FC1254FD39A008FC254 /* Main.storyboard */; };
+		CD7D9FC6254FD39A008FC254 /* BacaLexia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FC4254FD39A008FC254 /* BacaLexia.xcdatamodeld */; };
+		CD7D9FC8254FD39B008FC254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7D9FC7254FD39B008FC254 /* Assets.xcassets */; };
+		CD7D9FCB254FD39B008FC254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7D9FC9254FD39B008FC254 /* LaunchScreen.storyboard */; };
+		CD7D9FD6254FD39B008FC254 /* BacaLexiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FD5254FD39B008FC254 /* BacaLexiaTests.swift */; };
+		CD7D9FE1254FD39B008FC254 /* BacaLexiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FE0254FD39B008FC254 /* BacaLexiaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD7D9FD2254FD39B008FC254 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD7D9FB0254FD39A008FC254 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD7D9FB7254FD39A008FC254;
+			remoteInfo = BacaLexia;
+		};
+		CD7D9FDD254FD39B008FC254 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD7D9FB0254FD39A008FC254 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD7D9FB7254FD39A008FC254;
+			remoteInfo = BacaLexia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD7D9FB8254FD39A008FC254 /* BacaLexia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BacaLexia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD7D9FBB254FD39A008FC254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD7D9FBD254FD39A008FC254 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD7D9FBF254FD39A008FC254 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD7D9FC2254FD39A008FC254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD7D9FC5254FD39A008FC254 /* BacaLexia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BacaLexia.xcdatamodel; sourceTree = "<group>"; };
+		CD7D9FC7254FD39B008FC254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD7D9FCA254FD39B008FC254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD7D9FCC254FD39B008FC254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD7D9FD1254FD39B008FC254 /* BacaLexiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BacaLexiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD7D9FD5254FD39B008FC254 /* BacaLexiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacaLexiaTests.swift; sourceTree = "<group>"; };
+		CD7D9FD7254FD39B008FC254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD7D9FDC254FD39B008FC254 /* BacaLexiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BacaLexiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD7D9FE0254FD39B008FC254 /* BacaLexiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacaLexiaUITests.swift; sourceTree = "<group>"; };
+		CD7D9FE2254FD39B008FC254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD7D9FB5254FD39A008FC254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD7D9FCE254FD39B008FC254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD7D9FD9254FD39B008FC254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD7D9FAF254FD39A008FC254 = {
+			isa = PBXGroup;
+			children = (
+				CD7D9FBA254FD39A008FC254 /* BacaLexia */,
+				CD7D9FD4254FD39B008FC254 /* BacaLexiaTests */,
+				CD7D9FDF254FD39B008FC254 /* BacaLexiaUITests */,
+				CD7D9FB9254FD39A008FC254 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD7D9FB9254FD39A008FC254 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD7D9FB8254FD39A008FC254 /* BacaLexia.app */,
+				CD7D9FD1254FD39B008FC254 /* BacaLexiaTests.xctest */,
+				CD7D9FDC254FD39B008FC254 /* BacaLexiaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD7D9FBA254FD39A008FC254 /* BacaLexia */ = {
+			isa = PBXGroup;
+			children = (
+				CD7D9FBB254FD39A008FC254 /* AppDelegate.swift */,
+				CD7D9FBD254FD39A008FC254 /* SceneDelegate.swift */,
+				CD7D9FBF254FD39A008FC254 /* ViewController.swift */,
+				CD7D9FC1254FD39A008FC254 /* Main.storyboard */,
+				CD7D9FC7254FD39B008FC254 /* Assets.xcassets */,
+				CD7D9FC9254FD39B008FC254 /* LaunchScreen.storyboard */,
+				CD7D9FCC254FD39B008FC254 /* Info.plist */,
+				CD7D9FC4254FD39A008FC254 /* BacaLexia.xcdatamodeld */,
+			);
+			path = BacaLexia;
+			sourceTree = "<group>";
+		};
+		CD7D9FD4254FD39B008FC254 /* BacaLexiaTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD7D9FD5254FD39B008FC254 /* BacaLexiaTests.swift */,
+				CD7D9FD7254FD39B008FC254 /* Info.plist */,
+			);
+			path = BacaLexiaTests;
+			sourceTree = "<group>";
+		};
+		CD7D9FDF254FD39B008FC254 /* BacaLexiaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD7D9FE0254FD39B008FC254 /* BacaLexiaUITests.swift */,
+				CD7D9FE2254FD39B008FC254 /* Info.plist */,
+			);
+			path = BacaLexiaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD7D9FB7254FD39A008FC254 /* BacaLexia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD7D9FE5254FD39B008FC254 /* Build configuration list for PBXNativeTarget "BacaLexia" */;
+			buildPhases = (
+				CD7D9FB4254FD39A008FC254 /* Sources */,
+				CD7D9FB5254FD39A008FC254 /* Frameworks */,
+				CD7D9FB6254FD39A008FC254 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BacaLexia;
+			productName = BacaLexia;
+			productReference = CD7D9FB8254FD39A008FC254 /* BacaLexia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD7D9FD0254FD39B008FC254 /* BacaLexiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD7D9FE8254FD39B008FC254 /* Build configuration list for PBXNativeTarget "BacaLexiaTests" */;
+			buildPhases = (
+				CD7D9FCD254FD39B008FC254 /* Sources */,
+				CD7D9FCE254FD39B008FC254 /* Frameworks */,
+				CD7D9FCF254FD39B008FC254 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD7D9FD3254FD39B008FC254 /* PBXTargetDependency */,
+			);
+			name = BacaLexiaTests;
+			productName = BacaLexiaTests;
+			productReference = CD7D9FD1254FD39B008FC254 /* BacaLexiaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD7D9FDB254FD39B008FC254 /* BacaLexiaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD7D9FEB254FD39B008FC254 /* Build configuration list for PBXNativeTarget "BacaLexiaUITests" */;
+			buildPhases = (
+				CD7D9FD8254FD39B008FC254 /* Sources */,
+				CD7D9FD9254FD39B008FC254 /* Frameworks */,
+				CD7D9FDA254FD39B008FC254 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD7D9FDE254FD39B008FC254 /* PBXTargetDependency */,
+			);
+			name = BacaLexiaUITests;
+			productName = BacaLexiaUITests;
+			productReference = CD7D9FDC254FD39B008FC254 /* BacaLexiaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD7D9FB0254FD39A008FC254 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					CD7D9FB7254FD39A008FC254 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					CD7D9FD0254FD39B008FC254 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = CD7D9FB7254FD39A008FC254;
+					};
+					CD7D9FDB254FD39B008FC254 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = CD7D9FB7254FD39A008FC254;
+					};
+				};
+			};
+			buildConfigurationList = CD7D9FB3254FD39A008FC254 /* Build configuration list for PBXProject "BacaLexia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD7D9FAF254FD39A008FC254;
+			productRefGroup = CD7D9FB9254FD39A008FC254 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD7D9FB7254FD39A008FC254 /* BacaLexia */,
+				CD7D9FD0254FD39B008FC254 /* BacaLexiaTests */,
+				CD7D9FDB254FD39B008FC254 /* BacaLexiaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD7D9FB6254FD39A008FC254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7D9FCB254FD39B008FC254 /* LaunchScreen.storyboard in Resources */,
+				CD7D9FC8254FD39B008FC254 /* Assets.xcassets in Resources */,
+				CD7D9FC3254FD39A008FC254 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD7D9FCF254FD39B008FC254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD7D9FDA254FD39B008FC254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD7D9FB4254FD39A008FC254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7D9FC6254FD39A008FC254 /* BacaLexia.xcdatamodeld in Sources */,
+				CD7D9FC0254FD39A008FC254 /* ViewController.swift in Sources */,
+				CD7D9FBC254FD39A008FC254 /* AppDelegate.swift in Sources */,
+				CD7D9FBE254FD39A008FC254 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD7D9FCD254FD39B008FC254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7D9FD6254FD39B008FC254 /* BacaLexiaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD7D9FD8254FD39B008FC254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7D9FE1254FD39B008FC254 /* BacaLexiaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD7D9FD3254FD39B008FC254 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD7D9FB7254FD39A008FC254 /* BacaLexia */;
+			targetProxy = CD7D9FD2254FD39B008FC254 /* PBXContainerItemProxy */;
+		};
+		CD7D9FDE254FD39B008FC254 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD7D9FB7254FD39A008FC254 /* BacaLexia */;
+			targetProxy = CD7D9FDD254FD39B008FC254 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD7D9FC1254FD39A008FC254 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD7D9FC2254FD39A008FC254 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD7D9FC9254FD39B008FC254 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD7D9FCA254FD39B008FC254 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD7D9FE3254FD39B008FC254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD7D9FE4254FD39B008FC254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD7D9FE6254FD39B008FC254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN642GJ9WQ;
+				INFOPLIST_FILE = BacaLexia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.infinitelearning.id.BacaLexia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD7D9FE7254FD39B008FC254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN642GJ9WQ;
+				INFOPLIST_FILE = BacaLexia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.infinitelearning.id.BacaLexia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD7D9FE9254FD39B008FC254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN642GJ9WQ;
+				INFOPLIST_FILE = BacaLexiaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.infinitelearning.id.BacaLexiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BacaLexia.app/BacaLexia";
+			};
+			name = Debug;
+		};
+		CD7D9FEA254FD39B008FC254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN642GJ9WQ;
+				INFOPLIST_FILE = BacaLexiaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.infinitelearning.id.BacaLexiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BacaLexia.app/BacaLexia";
+			};
+			name = Release;
+		};
+		CD7D9FEC254FD39B008FC254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN642GJ9WQ;
+				INFOPLIST_FILE = BacaLexiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.infinitelearning.id.BacaLexiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BacaLexia;
+			};
+			name = Debug;
+		};
+		CD7D9FED254FD39B008FC254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN642GJ9WQ;
+				INFOPLIST_FILE = BacaLexiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.infinitelearning.id.BacaLexiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BacaLexia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD7D9FB3254FD39A008FC254 /* Build configuration list for PBXProject "BacaLexia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD7D9FE3254FD39B008FC254 /* Debug */,
+				CD7D9FE4254FD39B008FC254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD7D9FE5254FD39B008FC254 /* Build configuration list for PBXNativeTarget "BacaLexia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD7D9FE6254FD39B008FC254 /* Debug */,
+				CD7D9FE7254FD39B008FC254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD7D9FE8254FD39B008FC254 /* Build configuration list for PBXNativeTarget "BacaLexiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD7D9FE9254FD39B008FC254 /* Debug */,
+				CD7D9FEA254FD39B008FC254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD7D9FEB254FD39B008FC254 /* Build configuration list for PBXNativeTarget "BacaLexiaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD7D9FEC254FD39B008FC254 /* Debug */,
+				CD7D9FED254FD39B008FC254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CD7D9FC4254FD39A008FC254 /* BacaLexia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD7D9FC5254FD39A008FC254 /* BacaLexia.xcdatamodel */,
+			);
+			currentVersion = CD7D9FC5254FD39A008FC254 /* BacaLexia.xcdatamodel */;
+			path = BacaLexia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CD7D9FB0254FD39A008FC254 /* Project object */;
+}
