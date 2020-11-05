@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ahuruf View Controller-->
+        <scene sceneID="otH-2e-5u6">
+            <objects>
+                <viewController storyboardIdentifier="AhurufViewController" id="rLe-5M-voT" customClass="AhurufViewController" customModule="BacaLexia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4uK-qT-MYF">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background " translatesAutoresizingMaskIntoConstraints="NO" id="moh-LS-3Lo">
+                                <rect key="frame" x="-77" y="-115" width="1454" height="1379"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="arrow3" translatesAutoresizingMaskIntoConstraints="NO" id="Ivh-92-rWR">
+                                <rect key="frame" x="1" y="-1" width="151" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iTq-Cn-CYt">
+                                <rect key="frame" x="497" y="317" width="200" height="200"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xrz-Jg-rw5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xrz-Jg-rw5" firstAttribute="bottom" secondItem="iTq-Cn-CYt" secondAttribute="bottom" constant="297" id="Gmw-Gf-teB"/>
+                            <constraint firstItem="iTq-Cn-CYt" firstAttribute="top" secondItem="xrz-Jg-rw5" secondAttribute="top" constant="317" id="Lt7-oU-7zs"/>
+                            <constraint firstItem="iTq-Cn-CYt" firstAttribute="leading" secondItem="xrz-Jg-rw5" secondAttribute="leading" constant="497" id="Tz5-cn-6LI"/>
+                            <constraint firstItem="xrz-Jg-rw5" firstAttribute="trailing" secondItem="iTq-Cn-CYt" secondAttribute="trailing" constant="497" id="njs-kf-MFs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arrowButton" destination="Ivh-92-rWR" id="5O3-wY-vOL"/>
+                        <outlet property="hurufImage" destination="iTq-Cn-CYt" id="Mtr-3y-ZA2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vmy-ae-1kk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-160" y="19"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background " width="1454" height="1379"/>
+        <image name="arrow3" width="151" height="96"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		70A7E4C525529AC700350315 /* PilihanHurufVokal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A7E4C425529AC700350315 /* PilihanHurufVokal.storyboard */; };
-		70A7E4CA25529AE200350315 /* PilihanHurufKonsonan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A7E4C925529AE200350315 /* PilihanHurufKonsonan.storyboard */; };
-		70A7E4D32552A22800350315 /* PilihanHurufVocalViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A7E4D22552A22800350315 /* PilihanHurufVocalViewControler.swift */; };
-		70A7E4DB2552A23F00350315 /* PilihanHurufKonsonan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A7E4DA2552A23F00350315 /* PilihanHurufKonsonan.swift */; };
+		7065FAE925532A97004ABF4A /* PilihV.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7065FAE825532A97004ABF4A /* PilihV.storyboard */; };
+		7065FAEE25532AAB004ABF4A /* Ahuruf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7065FAED25532AAB004ABF4A /* Ahuruf.storyboard */; };
+		7065FAF325532B09004ABF4A /* PilihVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065FAF225532B09004ABF4A /* PilihVViewController.swift */; };
+		7065FAF825532B29004ABF4A /* AhurufViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065FAF725532B29004ABF4A /* AhurufViewController.swift */; };
 		CD7D9FBC254FD39A008FC254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FBB254FD39A008FC254 /* AppDelegate.swift */; };
 		CD7D9FBE254FD39A008FC254 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FBD254FD39A008FC254 /* SceneDelegate.swift */; };
 		CD7D9FC0254FD39A008FC254 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FBF254FD39A008FC254 /* ViewController.swift */; };
@@ -40,10 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		70A7E4C425529AC700350315 /* PilihanHurufVokal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PilihanHurufVokal.storyboard; sourceTree = "<group>"; };
-		70A7E4C925529AE200350315 /* PilihanHurufKonsonan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PilihanHurufKonsonan.storyboard; sourceTree = "<group>"; };
-		70A7E4D22552A22800350315 /* PilihanHurufVocalViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihanHurufVocalViewControler.swift; sourceTree = "<group>"; };
-		70A7E4DA2552A23F00350315 /* PilihanHurufKonsonan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihanHurufKonsonan.swift; sourceTree = "<group>"; };
+		7065FAE825532A97004ABF4A /* PilihV.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PilihV.storyboard; sourceTree = "<group>"; };
+		7065FAED25532AAB004ABF4A /* Ahuruf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ahuruf.storyboard; sourceTree = "<group>"; };
+		7065FAF225532B09004ABF4A /* PilihVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihVViewController.swift; sourceTree = "<group>"; };
+		7065FAF725532B29004ABF4A /* AhurufViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AhurufViewController.swift; sourceTree = "<group>"; };
 		CD7D9FB8254FD39A008FC254 /* BacaLexia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BacaLexia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7D9FBB254FD39A008FC254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD7D9FBD254FD39A008FC254 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,9 +89,10 @@
 		70A7E4B825529A1C00350315 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				CD7D9FC9254FD39B008FC254 /* LaunchScreen.storyboard */,
 				CD7D9FC1254FD39A008FC254 /* Main.storyboard */,
-				70A7E4C425529AC700350315 /* PilihanHurufVokal.storyboard */,
-				70A7E4C925529AE200350315 /* PilihanHurufKonsonan.storyboard */,
+				7065FAE825532A97004ABF4A /* PilihV.storyboard */,
+				7065FAED25532AAB004ABF4A /* Ahuruf.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -100,8 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				CD7D9FBF254FD39A008FC254 /* ViewController.swift */,
-				70A7E4D22552A22800350315 /* PilihanHurufVocalViewControler.swift */,
-				70A7E4DA2552A23F00350315 /* PilihanHurufKonsonan.swift */,
+				7065FAF225532B09004ABF4A /* PilihVViewController.swift */,
+				7065FAF725532B29004ABF4A /* AhurufViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -134,7 +135,6 @@
 				CD7D9FBB254FD39A008FC254 /* AppDelegate.swift */,
 				CD7D9FBD254FD39A008FC254 /* SceneDelegate.swift */,
 				CD7D9FC7254FD39B008FC254 /* Assets.xcassets */,
-				CD7D9FC9254FD39B008FC254 /* LaunchScreen.storyboard */,
 				CD7D9FCC254FD39B008FC254 /* Info.plist */,
 				CD7D9FC4254FD39A008FC254 /* BacaLexia.xcdatamodeld */,
 			);
@@ -262,11 +262,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70A7E4CA25529AE200350315 /* PilihanHurufKonsonan.storyboard in Resources */,
+				7065FAE925532A97004ABF4A /* PilihV.storyboard in Resources */,
 				CD7D9FCB254FD39B008FC254 /* LaunchScreen.storyboard in Resources */,
 				CD7D9FC8254FD39B008FC254 /* Assets.xcassets in Resources */,
+				7065FAEE25532AAB004ABF4A /* Ahuruf.storyboard in Resources */,
 				CD7D9FC3254FD39A008FC254 /* Main.storyboard in Resources */,
-				70A7E4C525529AC700350315 /* PilihanHurufVokal.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,11 +292,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD7D9FC6254FD39A008FC254 /* BacaLexia.xcdatamodeld in Sources */,
+				7065FAF825532B29004ABF4A /* AhurufViewController.swift in Sources */,
 				CD7D9FC0254FD39A008FC254 /* ViewController.swift in Sources */,
-				70A7E4D32552A22800350315 /* PilihanHurufVocalViewControler.swift in Sources */,
 				CD7D9FBC254FD39A008FC254 /* AppDelegate.swift in Sources */,
+				7065FAF325532B09004ABF4A /* PilihVViewController.swift in Sources */,
 				CD7D9FBE254FD39A008FC254 /* SceneDelegate.swift in Sources */,
-				70A7E4DB2552A23F00350315 /* PilihanHurufKonsonan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN642GJ9WQ;
 				INFOPLIST_FILE = BacaLexia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -494,6 +495,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN642GJ9WQ;
 				INFOPLIST_FILE = BacaLexia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,7 +515,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN642GJ9WQ;
 				INFOPLIST_FILE = BacaLexiaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -535,7 +537,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN642GJ9WQ;
 				INFOPLIST_FILE = BacaLexiaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -556,6 +558,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN642GJ9WQ;
 				INFOPLIST_FILE = BacaLexiaUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -576,6 +579,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN642GJ9WQ;
 				INFOPLIST_FILE = BacaLexiaUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

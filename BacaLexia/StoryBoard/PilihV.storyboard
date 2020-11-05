@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A9H-3Z-taA">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PilihV View Controller-->
+        <scene sceneID="iSV-nu-JWF">
+            <objects>
+                <viewController storyboardIdentifier="PilihVViewController" id="A9H-3Z-taA" customClass="PilihVViewController" customModule="BacaLexia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a9i-JQ-ABd">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background " translatesAutoresizingMaskIntoConstraints="NO" id="0Tq-ce-zf2">
+                                <rect key="frame" x="-77" y="-115" width="1454" height="1379"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="a" translatesAutoresizingMaskIntoConstraints="NO" id="iYo-YO-7T9">
+                                <rect key="frame" x="117" y="111" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="o" translatesAutoresizingMaskIntoConstraints="NO" id="YKr-jv-bsT">
+                                <rect key="frame" x="468" y="515" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="i" translatesAutoresizingMaskIntoConstraints="NO" id="Jc0-eY-KM5">
+                                <rect key="frame" x="397" y="134" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="u" translatesAutoresizingMaskIntoConstraints="NO" id="uHm-26-4mV">
+                                <rect key="frame" x="144" y="446" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="e" translatesAutoresizingMaskIntoConstraints="NO" id="Ov2-uZ-QOh">
+                                <rect key="frame" x="687" y="302" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="koalaPapan" translatesAutoresizingMaskIntoConstraints="NO" id="EI5-7o-b55">
+                                <rect key="frame" x="802" y="546" width="416" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c2d-oT-ipg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="aButton" destination="iYo-YO-7T9" id="iDB-UF-CxH"/>
+                        <outlet property="eButton" destination="Ov2-uZ-QOh" id="l0j-x3-Sf9"/>
+                        <outlet property="iButton" destination="Jc0-eY-KM5" id="Oij-6r-Wey"/>
+                        <outlet property="oButton" destination="YKr-jv-bsT" id="6tO-fx-tC4"/>
+                        <outlet property="uButton" destination="uHm-26-4mV" id="2uj-Oh-WDH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQs-J6-7Sb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2425.1256281407036" y="-2.1582733812949644"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background " width="1454" height="1379"/>
+        <image name="a" width="167" height="200"/>
+        <image name="e" width="176" height="200"/>
+        <image name="i" width="183" height="200"/>
+        <image name="koalaPapan" width="392" height="253"/>
+        <image name="o" width="178" height="200"/>
+        <image name="u" width="200" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
