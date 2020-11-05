@@ -11,6 +11,8 @@
 		70A7E4CA25529AE200350315 /* PilihanHurufKonsonan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A7E4C925529AE200350315 /* PilihanHurufKonsonan.storyboard */; };
 		70A7E4D32552A22800350315 /* PilihanHurufVocalViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A7E4D22552A22800350315 /* PilihanHurufVocalViewControler.swift */; };
 		70A7E4DB2552A23F00350315 /* PilihanHurufKonsonan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A7E4DA2552A23F00350315 /* PilihanHurufKonsonan.swift */; };
+		CD7844DA2552C0F200BCA0E5 /* MenulisA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7844D92552C0F200BCA0E5 /* MenulisA.storyboard */; };
+		CD7844DF2552D01C00BCA0E5 /* MenulisAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7844DE2552D01C00BCA0E5 /* MenulisAViewController.swift */; };
 		CD7D9FBC254FD39A008FC254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FBB254FD39A008FC254 /* AppDelegate.swift */; };
 		CD7D9FBE254FD39A008FC254 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FBD254FD39A008FC254 /* SceneDelegate.swift */; };
 		CD7D9FC0254FD39A008FC254 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FBF254FD39A008FC254 /* ViewController.swift */; };
@@ -44,6 +46,8 @@
 		70A7E4C925529AE200350315 /* PilihanHurufKonsonan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PilihanHurufKonsonan.storyboard; sourceTree = "<group>"; };
 		70A7E4D22552A22800350315 /* PilihanHurufVocalViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihanHurufVocalViewControler.swift; sourceTree = "<group>"; };
 		70A7E4DA2552A23F00350315 /* PilihanHurufKonsonan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihanHurufKonsonan.swift; sourceTree = "<group>"; };
+		CD7844D92552C0F200BCA0E5 /* MenulisA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenulisA.storyboard; sourceTree = "<group>"; };
+		CD7844DE2552D01C00BCA0E5 /* MenulisAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenulisAViewController.swift; sourceTree = "<group>"; };
 		CD7D9FB8254FD39A008FC254 /* BacaLexia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BacaLexia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7D9FBB254FD39A008FC254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD7D9FBD254FD39A008FC254 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 				CD7D9FC1254FD39A008FC254 /* Main.storyboard */,
 				70A7E4C425529AC700350315 /* PilihanHurufVokal.storyboard */,
 				70A7E4C925529AE200350315 /* PilihanHurufKonsonan.storyboard */,
+				CD7844D92552C0F200BCA0E5 /* MenulisA.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 				CD7D9FBF254FD39A008FC254 /* ViewController.swift */,
 				70A7E4D22552A22800350315 /* PilihanHurufVocalViewControler.swift */,
 				70A7E4DA2552A23F00350315 /* PilihanHurufKonsonan.swift */,
+				CD7844DE2552D01C00BCA0E5 /* MenulisAViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -262,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD7844DA2552C0F200BCA0E5 /* MenulisA.storyboard in Resources */,
 				70A7E4CA25529AE200350315 /* PilihanHurufKonsonan.storyboard in Resources */,
 				CD7D9FCB254FD39B008FC254 /* LaunchScreen.storyboard in Resources */,
 				CD7D9FC8254FD39B008FC254 /* Assets.xcassets in Resources */,
@@ -296,6 +303,7 @@
 				70A7E4D32552A22800350315 /* PilihanHurufVocalViewControler.swift in Sources */,
 				CD7D9FBC254FD39A008FC254 /* AppDelegate.swift in Sources */,
 				CD7D9FBE254FD39A008FC254 /* SceneDelegate.swift in Sources */,
+				CD7844DF2552D01C00BCA0E5 /* MenulisAViewController.swift in Sources */,
 				70A7E4DB2552A23F00350315 /* PilihanHurufKonsonan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
