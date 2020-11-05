@@ -9,6 +9,8 @@ import UIKit
 import AVFoundation
 
 class PilihVViewController: UIViewController {
+    
+    var bunyiPopUP: AVAudioPlayer!
 
     @IBOutlet weak var aButton: UIImageView!
     
@@ -19,6 +21,8 @@ class PilihVViewController: UIViewController {
     @IBOutlet weak var oButton: UIImageView!
     
     @IBOutlet weak var uButton: UIImageView!
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,8 +53,29 @@ class PilihVViewController: UIViewController {
         eButton.addGestureRecognizer(gestureE)
 
     }
+    
+    func animationfromRight(){
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.type = CATransitionType.fade
+        transition.subtype = CATransitionSubtype.fromRight
+        transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
+        view.window!.layer.add(transition, forKey: kCATransition)
+    }
+    func playSound() {
+        let url = Bundle.main.url(forResource: "A" ,withExtension: "wav")
+        bunyiPopUP = try! AVAudioPlayer(contentsOf: url!)
+        bunyiPopUP.play()
+        
+    }
+    
+    
 
     @objc func imageaTapped(){
+        
+        
+        playSound()
+        animationfromRight()
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
         
@@ -61,7 +86,8 @@ class PilihVViewController: UIViewController {
         
     }
     @objc func imageoTapped(){
-        
+        playSound()
+        animationfromRight()
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
         
@@ -71,7 +97,8 @@ class PilihVViewController: UIViewController {
         self.present(newViewController, animated: false, completion: nil)
     }
     @objc func imageuTapped(){
-        
+        playSound()
+        animationfromRight()
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
         
@@ -82,6 +109,8 @@ class PilihVViewController: UIViewController {
 
     }
     @objc func imageiTapped(){
+        playSound()
+        animationfromRight()
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
         
@@ -92,6 +121,8 @@ class PilihVViewController: UIViewController {
 
     }
     @objc func imageeTapped(){
+        playSound()
+        animationfromRight()
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
         

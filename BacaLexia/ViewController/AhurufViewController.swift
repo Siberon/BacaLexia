@@ -18,7 +18,7 @@ class AhurufViewController: UIViewController {
         
         back()
         pilihPic()
-        print(huruf)
+       
     }
     
     func back(){
