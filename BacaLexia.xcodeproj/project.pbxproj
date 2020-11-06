@@ -12,10 +12,10 @@
 		7065FAF325532B09004ABF4A /* PilihVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065FAF225532B09004ABF4A /* PilihVViewController.swift */; };
 		7065FAF825532B29004ABF4A /* AhurufViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065FAF725532B29004ABF4A /* AhurufViewController.swift */; };
 		70777BCC2554B51100E78239 /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BC52554B51000E78239 /* A.wav */; };
-		70777BCD2554B51100E78239 /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BC62554B51000E78239 /* D.wav */; };
-		70777BCE2554B51100E78239 /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BC72554B51000E78239 /* B.wav */; };
+		70777BCD2554B51100E78239 /* U.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BC62554B51000E78239 /* U.wav */; };
+		70777BCE2554B51100E78239 /* O.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BC72554B51000E78239 /* O.wav */; };
 		70777BCF2554B51100E78239 /* G.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BC82554B51100E78239 /* G.wav */; };
-		70777BD02554B51100E78239 /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BC92554B51100E78239 /* C.wav */; };
+		70777BD02554B51100E78239 /* I.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BC92554B51100E78239 /* I.wav */; };
 		70777BD12554B51100E78239 /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BCA2554B51100E78239 /* E.wav */; };
 		70777BD22554B51100E78239 /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BCB2554B51100E78239 /* F.wav */; };
 		CD7D9FBC254FD39A008FC254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FBB254FD39A008FC254 /* AppDelegate.swift */; };
@@ -52,10 +52,10 @@
 		7065FAF225532B09004ABF4A /* PilihVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihVViewController.swift; sourceTree = "<group>"; };
 		7065FAF725532B29004ABF4A /* AhurufViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AhurufViewController.swift; sourceTree = "<group>"; };
 		70777BC52554B51000E78239 /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
-		70777BC62554B51000E78239 /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
-		70777BC72554B51000E78239 /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B.wav; sourceTree = "<group>"; };
+		70777BC62554B51000E78239 /* U.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = U.wav; sourceTree = "<group>"; };
+		70777BC72554B51000E78239 /* O.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = O.wav; sourceTree = "<group>"; };
 		70777BC82554B51100E78239 /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G.wav; sourceTree = "<group>"; };
-		70777BC92554B51100E78239 /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C.wav; sourceTree = "<group>"; };
+		70777BC92554B51100E78239 /* I.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = I.wav; sourceTree = "<group>"; };
 		70777BCA2554B51100E78239 /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
 		70777BCB2554B51100E78239 /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
 		CD7D9FB8254FD39A008FC254 /* BacaLexia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BacaLexia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,9 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				70777BC52554B51000E78239 /* A.wav */,
-				70777BC72554B51000E78239 /* B.wav */,
-				70777BC92554B51100E78239 /* C.wav */,
-				70777BC62554B51000E78239 /* D.wav */,
+				70777BC72554B51000E78239 /* O.wav */,
+				70777BC92554B51100E78239 /* I.wav */,
+				70777BC62554B51000E78239 /* U.wav */,
 				70777BCA2554B51100E78239 /* E.wav */,
 				70777BCB2554B51100E78239 /* F.wav */,
 				70777BC82554B51100E78239 /* G.wav */,
@@ -296,9 +296,9 @@
 				70777BCC2554B51100E78239 /* A.wav in Resources */,
 				70777BD22554B51100E78239 /* F.wav in Resources */,
 				7065FAE925532A97004ABF4A /* PilihV.storyboard in Resources */,
-				70777BCD2554B51100E78239 /* D.wav in Resources */,
-				70777BD02554B51100E78239 /* C.wav in Resources */,
-				70777BCE2554B51100E78239 /* B.wav in Resources */,
+				70777BCD2554B51100E78239 /* U.wav in Resources */,
+				70777BD02554B51100E78239 /* I.wav in Resources */,
+				70777BCE2554B51100E78239 /* O.wav in Resources */,
 				CD7D9FCB254FD39B008FC254 /* LaunchScreen.storyboard in Resources */,
 				CD7D9FC8254FD39B008FC254 /* Assets.xcassets in Resources */,
 				7065FAEE25532AAB004ABF4A /* Ahuruf.storyboard in Resources */,
