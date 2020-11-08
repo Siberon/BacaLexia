@@ -9,36 +9,78 @@ import UIKit
 import AVFoundation
 
 
-
 class AhurufViewController: UIViewController {
     
     var bunyiHuruf : AVAudioPlayer!
-
-    @IBOutlet weak var arrowButton: UIImageView!
     var huruf : String = ""
-    @IBOutlet weak var hurufImage: UIImageView!
+    var isMascotShow: Bool = false
     
+    var state: Int = 0
+    
+    @IBOutlet weak var arrowButton: UIImageView!
+    @IBOutlet weak var nameActivity: UIImageView!
+    @IBOutlet weak var hurufImage: UIImageView!
+    @IBOutlet weak var bantuanBoard: UIImageView!
+    @IBOutlet weak var nameBoard: UIImageView!
+    
+    @IBOutlet weak var nextActivity: UIImageView!
+    
+    @IBOutlet weak var prevActivity: UIImageView!
+    
+    @IBOutlet weak var maskot: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        back()
+        backToPilihHuruf()
         pilihPic()
         mendengar()
+        goToNextActivity()
+        bantuanDisplay()
+        
        
     }
-    
+
+    func animationfromRight(){
+        let transition = CATransition()
+        transition.duration = 1.0
+        transition.type = CATransitionType.fade
+        transition.subtype = CATransitionSubtype.fromRight
+        transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
+        view.window!.layer.add(transition, forKey: kCATransition)
+    }
     func playSound(soundName: String) {
         let url = Bundle.main.url(forResource: soundName, withExtension: "wav")
         bunyiHuruf = try! AVAudioPlayer(contentsOf: url!)
         bunyiHuruf.play()
     }
     
-    func back(){
+    func backToPilihHuruf(){
         let gesture =  UITapGestureRecognizer(target: self, action: #selector(backimageTapped))
         arrowButton.isUserInteractionEnabled = true
         gesture.numberOfTapsRequired = 1
         arrowButton.addGestureRecognizer(gesture)
+    }
+    func goToNextActivity(){
+        goToPrevActivity()
+        
+        let gesture =  UITapGestureRecognizer(target: self, action: #selector(nextActivityTapped))
+        nextActivity.isUserInteractionEnabled = true
+        gesture.numberOfTapsRequired = 1
+        nextActivity.addGestureRecognizer(gesture)
+    }
+    func goToPrevActivity(){
+        
+        let gesture =  UITapGestureRecognizer(target: self, action: #selector(prevActivityTapped))
+        prevActivity.isUserInteractionEnabled = true
+        gesture.numberOfTapsRequired = 1
+        prevActivity.addGestureRecognizer(gesture)
+    }
+    func bantuanDisplay(){
+        let gesture =  UITapGestureRecognizer(target: self, action: #selector(maskotTapped))
+        maskot.isUserInteractionEnabled = true
+        gesture.numberOfTapsRequired = 1
+        maskot.addGestureRecognizer(gesture)
     }
     func mendengar(){
         let gestureDengar =  UITapGestureRecognizer(target: self, action: #selector(hurufImageTapped))
@@ -60,14 +102,21 @@ class AhurufViewController: UIViewController {
             hurufImage.image = #imageLiteral(resourceName: "u")
         }else if huruf == "E"{
             hurufImage.image = #imageLiteral(resourceName: "e")
+        }else if huruf == "O"{
+            hurufImage.image = #imageLiteral(resourceName: "u")
         }
     }
 
     @objc func backimageTapped(){
         
+        animationfromRight()
+       playSound(soundName: "pilihlahHuruf")
+        bantuanBoard.image = nil
+        
         let storyBoard: UIStoryboard = UIStoryboard(name: "PilihV", bundle: nil)
         
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "PilihVViewController") as! PilihVViewController
+       
         newViewController.modalPresentationStyle = .fullScreen
                 self.present(newViewController, animated: false, completion: nil)
         
@@ -85,6 +134,40 @@ class AhurufViewController: UIViewController {
         } else if huruf == "U"{
             playSound(soundName: "U")
         }
-            
+        bantuanBoard.image = nil
+    }
+    @objc func nextActivityTapped(){
+        state = 1
+        nameActivity.image = #imageLiteral(resourceName: "Text Box")
+        playSound(soundName: "mengucapkan")
+        prevActivity.image = #imageLiteral(resourceName: "arrow2")
+        bantuanBoard.image = nil
+        
+    }
+    @objc func prevActivityTapped(){
+        state = 0
+        nameActivity.image = #imageLiteral(resourceName: "board")
+        playSound(soundName: "mendengarkan")
+        bantuanBoard.image = nil
+    }
+    @objc func maskotTapped(){
+        if(state == 0){
+            isMascotShow.toggle()
+            if(isMascotShow) {
+                bantuanBoard.image = #imageLiteral(resourceName: "Text Box")
+                playSound(soundName: "intruksiDengar")
+            }else{
+                bantuanBoard.image = nil
+            }
+           
+        } else if(state == 1) {isMascotShow.toggle()
+            if(isMascotShow) {
+                bantuanBoard.image = #imageLiteral(resourceName: "board")
+                playSound(soundName: "intruksiUcap")
+        }else{
+            bantuanBoard.image = nil
+        }
+    }
+    
     }
 }

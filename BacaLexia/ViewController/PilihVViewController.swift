@@ -10,7 +10,9 @@ import AVFoundation
 
 class PilihVViewController: UIViewController {
     
-    var bunyiPopUP: AVAudioPlayer!
+    var bunyiPopUp: AVAudioPlayer!
+    var bunyiOne: AVAudioPlayer!
+    
 
     @IBOutlet weak var aButton: UIImageView!
     
@@ -62,20 +64,66 @@ class PilihVViewController: UIViewController {
         transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
         view.window!.layer.add(transition, forKey: kCATransition)
     }
-    func playSound() {
-        let url = Bundle.main.url(forResource: "A" ,withExtension: "wav")
-        bunyiPopUP = try! AVAudioPlayer(contentsOf: url!)
-        bunyiPopUP.play()
+    
         
-    }
-    
-    
+   /* func playSound(saundName:String) {
+        let url = Bundle.main.url(forResource: saundName ,withExtension: "wav")
+        bunyiPopUp = try! AVAudioPlayer(contentsOf: url!)
+        bunyiPopUp.play()  */
+        
+    func playSoundFalse() {
+            guard let url = Bundle.main.url(forResource: "A", withExtension: "wav") else { return }
 
+            do {
+                try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+                try AVAudioSession.sharedInstance().setActive(true)
+
+                /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+                bunyiPopUp = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
+
+                /* iOS 10 and earlier require the following line:
+                player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+
+                guard let player = bunyiPopUp else { return }
+
+                player.play()
+
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }
+        
+        func playSoundTrue() {
+            guard let url = Bundle.main.url(forResource: "mendengarkan", withExtension: "wav") else { return }
+
+            do {
+                try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+                try AVAudioSession.sharedInstance().setActive(true)
+
+                /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+                bunyiOne = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
+
+                /* iOS 10 and earlier require the following line:
+                player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+
+                guard let player = bunyiOne else { return }
+
+                player.play()
+
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }
+        
+    
     @objc func imageaTapped(){
         
         
-        playSound()
+        playSoundFalse()
+        
         animationfromRight()
+        
+        playSoundTrue()
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
         
@@ -86,8 +134,11 @@ class PilihVViewController: UIViewController {
         
     }
     @objc func imageoTapped(){
-        playSound()
+        playSoundFalse()
+        
         animationfromRight()
+        
+        playSoundTrue()
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
         
@@ -97,8 +148,11 @@ class PilihVViewController: UIViewController {
         self.present(newViewController, animated: false, completion: nil)
     }
     @objc func imageuTapped(){
-        playSound()
+        playSoundFalse()
+        
         animationfromRight()
+        
+        playSoundTrue()
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
         
@@ -109,8 +163,11 @@ class PilihVViewController: UIViewController {
 
     }
     @objc func imageiTapped(){
-        playSound()
+        playSoundFalse()
+        
         animationfromRight()
+        
+        playSoundTrue()
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
         
@@ -121,8 +178,11 @@ class PilihVViewController: UIViewController {
 
     }
     @objc func imageeTapped(){
-        playSound()
+        playSoundFalse()
+        
         animationfromRight()
+        
+        playSoundTrue()
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
         

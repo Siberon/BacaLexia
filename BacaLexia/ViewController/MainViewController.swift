@@ -1,14 +1,15 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  BacaLexia
 //
-//  Created by Patrick Chuang on 02/11/20.
+//  Created by Adri Nofrianto on 06/11/20.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
+    @IBOutlet weak var aImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -16,4 +17,3 @@ class ViewController: UIViewController {
 
 
 }
-
