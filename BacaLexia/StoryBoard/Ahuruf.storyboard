@@ -62,12 +62,13 @@
                     <connections>
                         <outlet property="PrevActivity" destination="jKH-gI-9OP" id="788-nd-JIP"/>
                         <outlet property="arrowButton" destination="Ivh-92-rWR" id="5O3-wY-vOL"/>
+                        <outlet property="background" destination="moh-LS-3Lo" id="7h1-1s-L1N"/>
                         <outlet property="bantuanBoard" destination="qiM-YN-6xR" id="YPA-BM-Kev"/>
                         <outlet property="hurufImage" destination="iTq-Cn-CYt" id="Mtr-3y-ZA2"/>
                         <outlet property="maskot" destination="Wip-Z3-f6y" id="QjX-rl-5h8"/>
-                        <outlet property="nameActivity" destination="15m-FT-DS4" id="XNd-tT-6bM"/>
                         <outlet property="nameBoard" destination="15m-FT-DS4" id="GfR-JW-Ec9"/>
                         <outlet property="nextActivity" destination="mjN-SZ-ISE" id="0Dv-LQ-LaU"/>
+                        <outlet property="prevActivity" destination="jKH-gI-9OP" id="Czp-x5-xG6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vmy-ae-1kk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

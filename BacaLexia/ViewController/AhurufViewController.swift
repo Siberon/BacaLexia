@@ -16,9 +16,10 @@ class AhurufViewController: UIViewController {
     var isMascotShow: Bool = false
     
     var state: Int = 0
-    
+   
+    @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var arrowButton: UIImageView!
-    @IBOutlet weak var nameActivity: UIImageView!
+    
     @IBOutlet weak var hurufImage: UIImageView!
     @IBOutlet weak var bantuanBoard: UIImageView!
     @IBOutlet weak var nameBoard: UIImageView!
@@ -37,6 +38,8 @@ class AhurufViewController: UIViewController {
         mendengar()
         goToNextActivity()
         bantuanDisplay()
+        backgroundTap()
+        
         
        
     }
@@ -89,6 +92,12 @@ class AhurufViewController: UIViewController {
         hurufImage.addGestureRecognizer(gestureDengar)
         
     }
+    func backgroundTap(){
+        let gesture =  UITapGestureRecognizer(target: self, action: #selector(backgroundImageTapped))
+        background.isUserInteractionEnabled = true
+        gesture.numberOfTapsRequired = 1
+        background.addGestureRecognizer(gesture)
+    }
     
     
     func pilihPic(){
@@ -138,15 +147,17 @@ class AhurufViewController: UIViewController {
     }
     @objc func nextActivityTapped(){
         state = 1
-        nameActivity.image = #imageLiteral(resourceName: "Text Box")
+        nameBoard.image = #imageLiteral(resourceName: "Text Box")
         playSound(soundName: "mengucapkan")
         prevActivity.image = #imageLiteral(resourceName: "arrow2")
         bantuanBoard.image = nil
-        
+    }
+    @objc func backgroundImageTapped(){
+        bantuanBoard.image = nil
     }
     @objc func prevActivityTapped(){
         state = 0
-        nameActivity.image = #imageLiteral(resourceName: "board")
+        nameBoard.image = #imageLiteral(resourceName: "board")
         playSound(soundName: "mendengarkan")
         bantuanBoard.image = nil
     }
