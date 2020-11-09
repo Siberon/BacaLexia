@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ahuruf View Controller-->
+        <scene sceneID="otH-2e-5u6">
+            <objects>
+                <viewController storyboardIdentifier="AhurufViewController" id="rLe-5M-voT" customClass="AhurufViewController" customModule="BacaLexia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4uK-qT-MYF">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Background " translatesAutoresizingMaskIntoConstraints="NO" id="moh-LS-3Lo">
+                                <rect key="frame" x="-77" y="-115" width="1454" height="1379"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="arrow3" translatesAutoresizingMaskIntoConstraints="NO" id="Ivh-92-rWR" userLabel="ArrowButton">
+                                <rect key="frame" x="1" y="-1" width="151" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iTq-Cn-CYt" userLabel="HurufImage">
+                                <rect key="frame" x="497" y="317" width="200" height="200"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="15m-FT-DS4">
+                                <rect key="frame" x="260" y="-95" width="678" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wip-Z3-f6y">
+                                <rect key="frame" x="848" y="594" width="446" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="koalaPapan"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qiM-YN-6xR">
+                                <rect key="frame" x="-55" y="594" width="1310" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow1" translatesAutoresizingMaskIntoConstraints="NO" id="mjN-SZ-ISE">
+                                <rect key="frame" x="1126" y="324" width="82" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jKH-gI-9OP">
+                                <rect key="frame" x="1" y="340" width="82" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xrz-Jg-rw5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xrz-Jg-rw5" firstAttribute="bottom" secondItem="iTq-Cn-CYt" secondAttribute="bottom" constant="297" id="Gmw-Gf-teB"/>
+                            <constraint firstItem="iTq-Cn-CYt" firstAttribute="top" secondItem="xrz-Jg-rw5" secondAttribute="top" constant="317" id="Lt7-oU-7zs"/>
+                            <constraint firstItem="iTq-Cn-CYt" firstAttribute="leading" secondItem="xrz-Jg-rw5" secondAttribute="leading" constant="497" id="Tz5-cn-6LI"/>
+                            <constraint firstItem="xrz-Jg-rw5" firstAttribute="trailing" secondItem="iTq-Cn-CYt" secondAttribute="trailing" constant="497" id="njs-kf-MFs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PrevActivity" destination="jKH-gI-9OP" id="788-nd-JIP"/>
+                        <outlet property="arrowButton" destination="Ivh-92-rWR" id="5O3-wY-vOL"/>
+                        <outlet property="background" destination="moh-LS-3Lo" id="7h1-1s-L1N"/>
+                        <outlet property="bantuanBoard" destination="qiM-YN-6xR" id="YPA-BM-Kev"/>
+                        <outlet property="hurufImage" destination="iTq-Cn-CYt" id="Mtr-3y-ZA2"/>
+                        <outlet property="maskot" destination="Wip-Z3-f6y" id="QjX-rl-5h8"/>
+                        <outlet property="nameBoard" destination="15m-FT-DS4" id="GfR-JW-Ec9"/>
+                        <outlet property="nextActivity" destination="mjN-SZ-ISE" id="0Dv-LQ-LaU"/>
+                        <outlet property="prevActivity" destination="jKH-gI-9OP" id="Czp-x5-xG6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vmy-ae-1kk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-160.30150753768845" y="18.705035971223023"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background " width="1454" height="1379"/>
+        <image name="arrow1" width="165" height="334"/>
+        <image name="arrow3" width="151" height="96"/>
+        <image name="board" width="686" height="256"/>
+        <image name="koalaPapan" width="392" height="253"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
