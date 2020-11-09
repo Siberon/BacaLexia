@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		70A7E4C525529AC700350315 /* PilihanHurufVokal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A7E4C425529AC700350315 /* PilihanHurufVokal.storyboard */; };
-		70A7E4CA25529AE200350315 /* PilihanHurufKonsonan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A7E4C925529AE200350315 /* PilihanHurufKonsonan.storyboard */; };
-		70A7E4D32552A22800350315 /* PilihanHurufVocalViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A7E4D22552A22800350315 /* PilihanHurufVocalViewControler.swift */; };
-		70A7E4DB2552A23F00350315 /* PilihanHurufKonsonan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A7E4DA2552A23F00350315 /* PilihanHurufKonsonan.swift */; };
+		7065FAE925532A97004ABF4A /* PilihV.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7065FAE825532A97004ABF4A /* PilihV.storyboard */; };
+		7065FAEE25532AAB004ABF4A /* Ahuruf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7065FAED25532AAB004ABF4A /* Ahuruf.storyboard */; };
+		7065FAF325532B09004ABF4A /* PilihVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065FAF225532B09004ABF4A /* PilihVViewController.swift */; };
+		7065FAF825532B29004ABF4A /* AhurufViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065FAF725532B29004ABF4A /* AhurufViewController.swift */; };
+		70776F0B2558A67700345E04 /* mendengarkan.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70776F072558A67700345E04 /* mendengarkan.wav */; };
+		70776F0C2558A67700345E04 /* mengucapkan.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70776F082558A67700345E04 /* mengucapkan.wav */; };
+		70776F0D2558A67700345E04 /* intruksiUcap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70776F092558A67700345E04 /* intruksiUcap.wav */; };
+		70776F0E2558A67700345E04 /* intruksiDengar.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70776F0A2558A67700345E04 /* intruksiDengar.wav */; };
+		70776F132558A7BA00345E04 /* pilihlahHuruf.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70776F122558A7BA00345E04 /* pilihlahHuruf.wav */; };
+		70777BCC2554B51100E78239 /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BC52554B51000E78239 /* A.wav */; };
+		70777BCD2554B51100E78239 /* U.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BC62554B51000E78239 /* U.wav */; };
+		70777BCE2554B51100E78239 /* O.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BC72554B51000E78239 /* O.wav */; };
+		70777BD02554B51100E78239 /* I.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BC92554B51100E78239 /* I.wav */; };
+		70777BD12554B51100E78239 /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BCA2554B51100E78239 /* E.wav */; };
+		70777BE52555225E00E78239 /* Dengar3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BE22555225E00E78239 /* Dengar3.wav */; };
+		70777BE62555225E00E78239 /* Dengar1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BE32555225E00E78239 /* Dengar1.wav */; };
+		70777BE72555225E00E78239 /* Dengar2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BE42555225E00E78239 /* Dengar2.wav */; };
+		70777BEF25555BE500E78239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70777BEE25555BE500E78239 /* Main.storyboard */; };
+		70777BF725555C1900E78239 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70777BF625555C1900E78239 /* MainViewController.swift */; };
 		CD7D9FBC254FD39A008FC254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FBB254FD39A008FC254 /* AppDelegate.swift */; };
 		CD7D9FBE254FD39A008FC254 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FBD254FD39A008FC254 /* SceneDelegate.swift */; };
-		CD7D9FC0254FD39A008FC254 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FBF254FD39A008FC254 /* ViewController.swift */; };
-		CD7D9FC3254FD39A008FC254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7D9FC1254FD39A008FC254 /* Main.storyboard */; };
 		CD7D9FC6254FD39A008FC254 /* BacaLexia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FC4254FD39A008FC254 /* BacaLexia.xcdatamodeld */; };
 		CD7D9FC8254FD39B008FC254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7D9FC7254FD39B008FC254 /* Assets.xcassets */; };
 		CD7D9FCB254FD39B008FC254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7D9FC9254FD39B008FC254 /* LaunchScreen.storyboard */; };
@@ -40,15 +53,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		70A7E4C425529AC700350315 /* PilihanHurufVokal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PilihanHurufVokal.storyboard; sourceTree = "<group>"; };
-		70A7E4C925529AE200350315 /* PilihanHurufKonsonan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PilihanHurufKonsonan.storyboard; sourceTree = "<group>"; };
-		70A7E4D22552A22800350315 /* PilihanHurufVocalViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihanHurufVocalViewControler.swift; sourceTree = "<group>"; };
-		70A7E4DA2552A23F00350315 /* PilihanHurufKonsonan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihanHurufKonsonan.swift; sourceTree = "<group>"; };
+		7065FAE825532A97004ABF4A /* PilihV.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PilihV.storyboard; sourceTree = "<group>"; };
+		7065FAED25532AAB004ABF4A /* Ahuruf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ahuruf.storyboard; sourceTree = "<group>"; };
+		7065FAF225532B09004ABF4A /* PilihVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihVViewController.swift; sourceTree = "<group>"; };
+		7065FAF725532B29004ABF4A /* AhurufViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AhurufViewController.swift; sourceTree = "<group>"; };
+		70776F072558A67700345E04 /* mendengarkan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mendengarkan.wav; sourceTree = "<group>"; };
+		70776F082558A67700345E04 /* mengucapkan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mengucapkan.wav; sourceTree = "<group>"; };
+		70776F092558A67700345E04 /* intruksiUcap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = intruksiUcap.wav; sourceTree = "<group>"; };
+		70776F0A2558A67700345E04 /* intruksiDengar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = intruksiDengar.wav; sourceTree = "<group>"; };
+		70776F122558A7BA00345E04 /* pilihlahHuruf.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pilihlahHuruf.wav; sourceTree = "<group>"; };
+		70777BC52554B51000E78239 /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
+		70777BC62554B51000E78239 /* U.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = U.wav; sourceTree = "<group>"; };
+		70777BC72554B51000E78239 /* O.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = O.wav; sourceTree = "<group>"; };
+		70777BC92554B51100E78239 /* I.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = I.wav; sourceTree = "<group>"; };
+		70777BCA2554B51100E78239 /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
+		70777BE22555225E00E78239 /* Dengar3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Dengar3.wav; sourceTree = "<group>"; };
+		70777BE32555225E00E78239 /* Dengar1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Dengar1.wav; sourceTree = "<group>"; };
+		70777BE42555225E00E78239 /* Dengar2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Dengar2.wav; sourceTree = "<group>"; };
+		70777BEE25555BE500E78239 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		70777BF625555C1900E78239 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CD7D9FB8254FD39A008FC254 /* BacaLexia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BacaLexia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7D9FBB254FD39A008FC254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD7D9FBD254FD39A008FC254 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD7D9FBF254FD39A008FC254 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CD7D9FC2254FD39A008FC254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD7D9FC5254FD39A008FC254 /* BacaLexia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BacaLexia.xcdatamodel; sourceTree = "<group>"; };
 		CD7D9FC7254FD39B008FC254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD7D9FCA254FD39B008FC254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,12 +112,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70777BC42554B4EE00E78239 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				70776F122558A7BA00345E04 /* pilihlahHuruf.wav */,
+				70776F0A2558A67700345E04 /* intruksiDengar.wav */,
+				70776F092558A67700345E04 /* intruksiUcap.wav */,
+				70776F072558A67700345E04 /* mendengarkan.wav */,
+				70776F082558A67700345E04 /* mengucapkan.wav */,
+				70777BE32555225E00E78239 /* Dengar1.wav */,
+				70777BE42555225E00E78239 /* Dengar2.wav */,
+				70777BE22555225E00E78239 /* Dengar3.wav */,
+				70777BC52554B51000E78239 /* A.wav */,
+				70777BC72554B51000E78239 /* O.wav */,
+				70777BC92554B51100E78239 /* I.wav */,
+				70777BC62554B51000E78239 /* U.wav */,
+				70777BCA2554B51100E78239 /* E.wav */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		70A7E4B825529A1C00350315 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
-				CD7D9FC1254FD39A008FC254 /* Main.storyboard */,
-				70A7E4C425529AC700350315 /* PilihanHurufVokal.storyboard */,
-				70A7E4C925529AE200350315 /* PilihanHurufKonsonan.storyboard */,
+				70777BEE25555BE500E78239 /* Main.storyboard */,
+				CD7D9FC9254FD39B008FC254 /* LaunchScreen.storyboard */,
+				7065FAE825532A97004ABF4A /* PilihV.storyboard */,
+				7065FAED25532AAB004ABF4A /* Ahuruf.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -99,9 +146,9 @@
 		70A7E4CE2552A17600350315 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CD7D9FBF254FD39A008FC254 /* ViewController.swift */,
-				70A7E4D22552A22800350315 /* PilihanHurufVocalViewControler.swift */,
-				70A7E4DA2552A23F00350315 /* PilihanHurufKonsonan.swift */,
+				70777BF625555C1900E78239 /* MainViewController.swift */,
+				7065FAF225532B09004ABF4A /* PilihVViewController.swift */,
+				7065FAF725532B29004ABF4A /* AhurufViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -134,9 +181,9 @@
 				CD7D9FBB254FD39A008FC254 /* AppDelegate.swift */,
 				CD7D9FBD254FD39A008FC254 /* SceneDelegate.swift */,
 				CD7D9FC7254FD39B008FC254 /* Assets.xcassets */,
-				CD7D9FC9254FD39B008FC254 /* LaunchScreen.storyboard */,
 				CD7D9FCC254FD39B008FC254 /* Info.plist */,
 				CD7D9FC4254FD39A008FC254 /* BacaLexia.xcdatamodeld */,
+				70777BC42554B4EE00E78239 /* Sound */,
 			);
 			path = BacaLexia;
 			sourceTree = "<group>";
@@ -262,11 +309,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70A7E4CA25529AE200350315 /* PilihanHurufKonsonan.storyboard in Resources */,
+				70776F0C2558A67700345E04 /* mengucapkan.wav in Resources */,
+				70777BD12554B51100E78239 /* E.wav in Resources */,
+				70777BE52555225E00E78239 /* Dengar3.wav in Resources */,
+				70777BCC2554B51100E78239 /* A.wav in Resources */,
+				7065FAE925532A97004ABF4A /* PilihV.storyboard in Resources */,
+				70777BEF25555BE500E78239 /* Main.storyboard in Resources */,
+				70777BCD2554B51100E78239 /* U.wav in Resources */,
+				70777BD02554B51100E78239 /* I.wav in Resources */,
+				70777BCE2554B51100E78239 /* O.wav in Resources */,
+				70777BE72555225E00E78239 /* Dengar2.wav in Resources */,
 				CD7D9FCB254FD39B008FC254 /* LaunchScreen.storyboard in Resources */,
+				70776F0E2558A67700345E04 /* intruksiDengar.wav in Resources */,
 				CD7D9FC8254FD39B008FC254 /* Assets.xcassets in Resources */,
-				CD7D9FC3254FD39A008FC254 /* Main.storyboard in Resources */,
-				70A7E4C525529AC700350315 /* PilihanHurufVokal.storyboard in Resources */,
+				70776F0B2558A67700345E04 /* mendengarkan.wav in Resources */,
+				70777BE62555225E00E78239 /* Dengar1.wav in Resources */,
+				70776F132558A7BA00345E04 /* pilihlahHuruf.wav in Resources */,
+				70776F0D2558A67700345E04 /* intruksiUcap.wav in Resources */,
+				7065FAEE25532AAB004ABF4A /* Ahuruf.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,11 +352,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD7D9FC6254FD39A008FC254 /* BacaLexia.xcdatamodeld in Sources */,
-				CD7D9FC0254FD39A008FC254 /* ViewController.swift in Sources */,
-				70A7E4D32552A22800350315 /* PilihanHurufVocalViewControler.swift in Sources */,
+				7065FAF825532B29004ABF4A /* AhurufViewController.swift in Sources */,
 				CD7D9FBC254FD39A008FC254 /* AppDelegate.swift in Sources */,
+				70777BF725555C1900E78239 /* MainViewController.swift in Sources */,
+				7065FAF325532B09004ABF4A /* PilihVViewController.swift in Sources */,
 				CD7D9FBE254FD39A008FC254 /* SceneDelegate.swift in Sources */,
-				70A7E4DB2552A23F00350315 /* PilihanHurufKonsonan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,14 +392,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CD7D9FC1254FD39A008FC254 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CD7D9FC2254FD39A008FC254 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CD7D9FC9254FD39B008FC254 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -475,6 +527,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN642GJ9WQ;
 				INFOPLIST_FILE = BacaLexia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -494,6 +547,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN642GJ9WQ;
 				INFOPLIST_FILE = BacaLexia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,7 +567,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN642GJ9WQ;
 				INFOPLIST_FILE = BacaLexiaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -535,7 +589,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN642GJ9WQ;
 				INFOPLIST_FILE = BacaLexiaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -556,6 +610,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN642GJ9WQ;
 				INFOPLIST_FILE = BacaLexiaUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -576,6 +631,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN642GJ9WQ;
 				INFOPLIST_FILE = BacaLexiaUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
