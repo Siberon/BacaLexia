@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PilihKons-->
+        <scene sceneID="NMc-kY-eqK">
+            <objects>
+                <viewController storyboardIdentifier="PilihKonsViewController" title="PilihKons" id="rjC-yH-dBj" customClass="PilihKonsViewController" customModule="BacaLexia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RW3-kf-huO">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dv6-bk-bxc">
+                                <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b" translatesAutoresizingMaskIntoConstraints="NO" id="tWC-WH-cxy">
+                                <rect key="frame" x="127" y="88" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="c" translatesAutoresizingMaskIntoConstraints="NO" id="Gav-9q-uSf">
+                                <rect key="frame" x="381" y="77" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d" translatesAutoresizingMaskIntoConstraints="NO" id="jqp-4F-ZBv">
+                                <rect key="frame" x="617" y="48" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="j" translatesAutoresizingMaskIntoConstraints="NO" id="Pgm-3u-tfc">
+                                <rect key="frame" x="574" y="288" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="f" translatesAutoresizingMaskIntoConstraints="NO" id="yKw-7f-p8h">
+                                <rect key="frame" x="852" y="88" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="m" translatesAutoresizingMaskIntoConstraints="NO" id="O0A-QX-3GK">
+                                <rect key="frame" x="363" y="546" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="l" translatesAutoresizingMaskIntoConstraints="NO" id="xNw-ro-NTK">
+                                <rect key="frame" x="127" y="546" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="g" translatesAutoresizingMaskIntoConstraints="NO" id="fm1-OK-Ax3">
+                                <rect key="frame" x="91" y="317" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="k" translatesAutoresizingMaskIntoConstraints="NO" id="NZ3-MQ-swY">
+                                <rect key="frame" x="817" y="317" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="n" translatesAutoresizingMaskIntoConstraints="NO" id="wvm-zH-7KH">
+                                <rect key="frame" x="597" y="547" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="h" translatesAutoresizingMaskIntoConstraints="NO" id="fKe-iE-ov5">
+                                <rect key="frame" x="327" y="317" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQ0-Fx-Ilm">
+                                <rect key="frame" x="805" y="581" width="446" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="koalaPapan"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow3" translatesAutoresizingMaskIntoConstraints="NO" id="j1W-4K-i4a">
+                                <rect key="frame" x="0.0" y="0.0" width="151" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow1" translatesAutoresizingMaskIntoConstraints="NO" id="BBU-PR-5Iz">
+                                <rect key="frame" x="1112" y="349" width="82" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Wb-RH-1Bu">
+                                <rect key="frame" x="0.0" y="349" width="82" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uh0-MU-2ii"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="arrowButton" destination="j1W-4K-i4a" id="Tcv-ja-7r9"/>
+                        <outlet property="bButton" destination="tWC-WH-cxy" id="BIc-CK-4At"/>
+                        <outlet property="cButton" destination="Gav-9q-uSf" id="WBl-Yt-4BS"/>
+                        <outlet property="dButton" destination="jqp-4F-ZBv" id="Jca-yR-1qU"/>
+                        <outlet property="fButton" destination="yKw-7f-p8h" id="7Sg-8e-Znm"/>
+                        <outlet property="gButton" destination="fm1-OK-Ax3" id="k3L-sq-dYT"/>
+                        <outlet property="hButton" destination="fKe-iE-ov5" id="ANy-oa-qnt"/>
+                        <outlet property="jButton" destination="Pgm-3u-tfc" id="oDD-Qx-yDL"/>
+                        <outlet property="kButton" destination="NZ3-MQ-swY" id="Bzh-FR-NEO"/>
+                        <outlet property="lButton" destination="xNw-ro-NTK" id="15q-bG-eHM"/>
+                        <outlet property="mButton" destination="O0A-QX-3GK" id="Q0h-1y-z7S"/>
+                        <outlet property="maskot" destination="fQ0-Fx-Ilm" id="3BP-o3-gi1"/>
+                        <outlet property="nButton" destination="wvm-zH-7KH" id="kdz-tr-SmT"/>
+                        <outlet property="nextActivity" destination="BBU-PR-5Iz" id="EFr-Zw-dHp"/>
+                        <outlet property="prevActivity" destination="4Wb-RH-1Bu" id="jy6-z6-WMn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b4J-0Q-qb6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-319.09547738693465" y="87.769784172661872"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow1" width="165" height="334"/>
+        <image name="arrow3" width="151" height="96"/>
+        <image name="b" width="183" height="200"/>
+        <image name="c" width="178" height="200"/>
+        <image name="d" width="183" height="200"/>
+        <image name="f" width="183" height="200"/>
+        <image name="g" width="167" height="200"/>
+        <image name="h" width="183" height="200"/>
+        <image name="j" width="193" height="200"/>
+        <image name="k" width="183" height="200"/>
+        <image name="koalaPapan" width="392" height="253"/>
+        <image name="l" width="183" height="200"/>
+        <image name="m" width="193" height="200"/>
+        <image name="n" width="178" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

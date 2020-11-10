@@ -14,6 +14,8 @@ class PilihVViewController: UIViewController {
     var bunyiOne: AVAudioPlayer!
     
 
+    
+    @IBOutlet weak var arrowButton: UIImageView!
     @IBOutlet weak var aButton: UIImageView!
     
     @IBOutlet weak var iButton: UIImageView!
@@ -29,6 +31,7 @@ class PilihVViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    backToPilihHuruf()
         let gesture =  UITapGestureRecognizer(target: self, action: #selector(imageaTapped))
         aButton.isUserInteractionEnabled = true
         gesture.numberOfTapsRequired = 1
@@ -64,7 +67,20 @@ class PilihVViewController: UIViewController {
         transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
         view.window!.layer.add(transition, forKey: kCATransition)
     }
-    
+    func backToPilihHuruf(){
+        let gesture =  UITapGestureRecognizer(target: self, action: #selector(backimageTapped))
+        arrowButton.isUserInteractionEnabled = true
+        gesture.numberOfTapsRequired = 1
+        arrowButton.addGestureRecognizer(gesture)
+    }
+    @objc func backimageTapped(){
+        
+        animationfromRight()
+     //  playSound(soundName: "pilihlahHuruf")
+     //   bantuanBoard.image = nil
+        dismiss(animated: true, completion: nil)
+        
+    }
         
    /* func playSound(saundName:String) {
         let url = Bundle.main.url(forResource: saundName ,withExtension: "wav")

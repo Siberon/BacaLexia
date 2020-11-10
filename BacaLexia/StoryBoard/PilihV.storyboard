@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A9H-3Z-taA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--PilihV View Controller-->
+        <!--PilihV-->
         <scene sceneID="iSV-nu-JWF">
             <objects>
-                <viewController storyboardIdentifier="PilihVViewController" id="A9H-3Z-taA" customClass="PilihVViewController" customModule="BacaLexia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PilihVViewController" title="PilihV" id="A9H-3Z-taA" customClass="PilihVViewController" customModule="BacaLexia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a9i-JQ-ABd">
                         <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,12 +45,17 @@
                                 <rect key="frame" x="687" y="302" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow3" translatesAutoresizingMaskIntoConstraints="NO" id="2ZN-7M-Vjo">
+                                <rect key="frame" x="0.0" y="0.0" width="151" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="c2d-oT-ipg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="aButton" destination="uhw-61-OzB" id="3Xu-9B-8ug"/>
+                        <outlet property="arrowButton" destination="2ZN-7M-Vjo" id="Xrx-ar-w4P"/>
                         <outlet property="eButton" destination="nx5-Xr-S19" id="bmO-30-oHV"/>
                         <outlet property="iButton" destination="ktM-wt-O0e" id="kiI-6Q-sDR"/>
                         <outlet property="oButton" destination="vlH-Sk-4Hf" id="STE-oz-OGj"/>
@@ -64,6 +69,7 @@
     </scenes>
     <resources>
         <image name="a" width="167" height="200"/>
+        <image name="arrow3" width="151" height="96"/>
         <image name="e" width="176" height="200"/>
         <image name="i" width="183" height="200"/>
         <image name="koalaPapan" width="392" height="253"/>
