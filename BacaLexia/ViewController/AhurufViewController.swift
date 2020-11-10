@@ -142,78 +142,85 @@ class AhurufViewController: UIViewController {
     }
     
     @objc func nextActivityTapped(){
-        state = 1
-        nameBoard.image = #imageLiteral(resourceName: "Text Box")
-        playSound(soundName: "mengucapkan")
-        prevActivity.image = #imageLiteral(resourceName: "arrow2")
-        bantuanBoard.image = nil
         
-        
-        
-        if huruf == "A"{
-
-                let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
-
-                let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
-
+        state = 0
+        while state > -1 {
             
+            state += 1
+            if state == 2 {
+                if huruf == "A"{
 
-                newViewController.modalPresentationStyle = .fullScreen
-            
-            newViewController.huruf = "A"
+                        let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
+                        
+                        let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
+                
+                        newViewController.huruf = "A"
+
+                        newViewController.modalPresentationStyle = .fullScreen
+                            self.present(newViewController, animated: false, completion: nil)
+
+
+                } else if huruf == "O"{
+
+                        let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
+
+                        let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
+                    
+                    newViewController.huruf = "O"
+
+                    newViewController.modalPresentationStyle = .fullScreen
                     self.present(newViewController, animated: false, completion: nil)
 
 
-        } else if huruf == "O"{
+                } else if huruf == "I"{
 
-                let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
+                        let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
 
-                let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
-
-                newViewController.modalPresentationStyle = .fullScreen
-            
-            newViewController.huruf = "O"
-            self.present(newViewController, animated: false, completion: nil)
+                        let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
 
 
-        } else if huruf == "I"{
-
-                let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
-
-                let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
-
-
-                newViewController.modalPresentationStyle = .fullScreen
-                    self.present(newViewController, animated: false, completion: nil)
-
-            newViewController.huruf = "I"
-
-        } else if huruf == "E"{
-
-                let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
-
-                let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
+                        newViewController.huruf = "I"
+                    
+                        newViewController.modalPresentationStyle = .fullScreen
+                            self.present(newViewController, animated: false, completion: nil)
 
 
-                newViewController.modalPresentationStyle = .fullScreen
-                    self.present(newViewController, animated: false, completion: nil)
+                } else if huruf == "E"{
 
-            newViewController.huruf = "E"
+                        let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
 
-
-        } else if huruf == "U"{
-
-                let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
-
-                let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
+                        let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
 
 
-                newViewController.modalPresentationStyle = .fullScreen
-                    self.present(newViewController, animated: false, completion: nil)
+                    newViewController.huruf = "E"
+                    
+                        newViewController.modalPresentationStyle = .fullScreen
+                            self.present(newViewController, animated: false, completion: nil)
 
-            newViewController.huruf = "U"
 
+
+                } else if huruf == "U"{
+
+                        let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
+
+                        let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
+
+
+                    newViewController.huruf = "U"
+
+                        newViewController.modalPresentationStyle = .fullScreen
+                            self.present(newViewController, animated: false, completion: nil)
+
+
+                }
+            }else if state == 1 {
+                nameBoard.image = #imageLiteral(resourceName: "Text Box")
+                playSound(soundName: "mengucapkan")
+                prevActivity.image = #imageLiteral(resourceName: "arrow2")
+                bantuanBoard.image = nil
+                }
         }
+        
 //
 //        let vc = storyboard? .instantiateViewController(identifier: "MenulisA") as! MenulisAViewController
 //
