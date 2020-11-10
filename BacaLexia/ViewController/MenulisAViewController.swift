@@ -14,6 +14,8 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
     @IBOutlet weak var mCanvas: PKCanvasView!
     @IBOutlet weak var TextBantuan: UIImageView!
     @IBOutlet weak var KoalaBtn: UIImageView!
+    @IBOutlet weak var hurufImage: UIImageView!
+    
     
     var audioPlayer = AVAudioPlayer()
     
@@ -22,12 +24,29 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
     
     var drawing = PKDrawing()
     var toolPicker : PKToolPicker!
+    
+    var huruf : String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkAlphabets()
         ShowGuideSound()
         showguide()
     
+    }
+    
+    func checkAlphabets() {
+            if huruf == "A"{
+                hurufImage.image = #imageLiteral(resourceName: "aMenulis")
+            }else if huruf == "I"{
+                hurufImage.image = #imageLiteral(resourceName: "iMenulis")
+            }else if huruf == "U"{
+                hurufImage.image = #imageLiteral(resourceName: "uMenulis")
+            }else if huruf == "E"{
+                hurufImage.image = #imageLiteral(resourceName: "eMenulis")
+            }else if huruf == "O"{
+                hurufImage.image = #imageLiteral(resourceName: "oMenulis")
+            }
     }
     
     func ShowGuideSound(){
@@ -65,6 +84,8 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
                     
                 }
     }
+    
+    
     
     
     func showCanvas(){

@@ -25,13 +25,11 @@ class AhurufViewController: UIViewController {
     @IBOutlet weak var nameBoard: UIImageView!
     
     @IBOutlet weak var nextActivity: UIImageView!
-    
     @IBOutlet weak var prevActivity: UIImageView!
     
     @IBOutlet weak var maskot: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         backToPilihHuruf()
         pilihPic()
@@ -40,8 +38,6 @@ class AhurufViewController: UIViewController {
         bantuanDisplay()
         backgroundTap()
         
-        
-       
     }
 
     func animationfromRight(){
@@ -66,7 +62,6 @@ class AhurufViewController: UIViewController {
     }
     func goToNextActivity(){
         goToPrevActivity()
-        
         let gesture =  UITapGestureRecognizer(target: self, action: #selector(nextActivityTapped))
         nextActivity.isUserInteractionEnabled = true
         gesture.numberOfTapsRequired = 1
@@ -145,12 +140,83 @@ class AhurufViewController: UIViewController {
         }
         bantuanBoard.image = nil
     }
+    
     @objc func nextActivityTapped(){
         state = 1
         nameBoard.image = #imageLiteral(resourceName: "Text Box")
         playSound(soundName: "mengucapkan")
         prevActivity.image = #imageLiteral(resourceName: "arrow2")
         bantuanBoard.image = nil
+        
+        
+        
+        if huruf == "A"{
+
+                let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
+
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
+
+            
+
+                newViewController.modalPresentationStyle = .fullScreen
+            
+            newViewController.huruf = "A"
+                    self.present(newViewController, animated: false, completion: nil)
+
+
+        } else if huruf == "O"{
+
+                let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
+
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
+
+                newViewController.modalPresentationStyle = .fullScreen
+            
+            newViewController.huruf = "O"
+            self.present(newViewController, animated: false, completion: nil)
+
+
+        } else if huruf == "I"{
+
+                let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
+
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
+
+
+                newViewController.modalPresentationStyle = .fullScreen
+                    self.present(newViewController, animated: false, completion: nil)
+
+            newViewController.huruf = "I"
+
+        } else if huruf == "E"{
+
+                let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
+
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
+
+
+                newViewController.modalPresentationStyle = .fullScreen
+                    self.present(newViewController, animated: false, completion: nil)
+
+            newViewController.huruf = "E"
+
+
+        } else if huruf == "U"{
+
+                let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
+
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
+
+
+                newViewController.modalPresentationStyle = .fullScreen
+                    self.present(newViewController, animated: false, completion: nil)
+
+            newViewController.huruf = "U"
+
+        }
+//
+//        let vc = storyboard? .instantiateViewController(identifier: "MenulisA") as! MenulisAViewController
+//
     }
     @objc func backgroundImageTapped(){
         bantuanBoard.image = nil

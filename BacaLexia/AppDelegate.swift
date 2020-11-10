@@ -11,10 +11,21 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //pilih start page
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+             let storyboard = UIStoryboard(name: "PilihV", bundle: nil)
+             
+             let initialViewController = storyboard.instantiateViewController(withIdentifier: "PilihVViewController")
+             
+             self.window?.rootViewController = initialViewController
+             self.window?.makeKeyAndVisible()
+        
+        
         return true
     }
 
