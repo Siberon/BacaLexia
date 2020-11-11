@@ -164,13 +164,6 @@ class AhurufViewController: UIViewController {
         animationfromRight()
        playSound(soundName: "pilihlahHuruf")
         bantuanBoard.image = nil
-        
-//        let storyBoard: UIStoryboard = UIStoryboard(name: "PilihV", bundle: nil)
-//
-//        let newViewController = storyBoard.instantiateViewController(withIdentifier: "PilihVViewController") as! PilihVViewController
-//
-//        newViewController.modalPresentationStyle = .fullScreen
-//                self.present(newViewController, animated: false, completion: nil)
         dismiss(animated: true, completion: nil)
         
     }
@@ -208,6 +201,26 @@ class AhurufViewController: UIViewController {
             playSound(soundName: "I")
         } else if huruf == "N"{
             playSound(soundName: "E")
+        }else if huruf == "P"{
+            playSound(soundName: "A")
+        } else if huruf == "Q"{
+            playSound(soundName: "O")
+        } else if huruf == "R"{
+            playSound(soundName: "I")
+        } else if huruf == "S"{
+            playSound(soundName: "E")
+        } else if huruf == "T"{
+            playSound(soundName: "U")
+        }else if huruf == "V"{
+            playSound(soundName: "O")
+        } else if huruf == "W"{
+            playSound(soundName: "I")
+        } else if huruf == "X"{
+            playSound(soundName: "E")
+        } else if huruf == "Y"{
+            playSound(soundName: "U")
+        }else if huruf == "Z"{
+            playSound(soundName: "O")
         }
         bantuanBoard.image = nil
     }

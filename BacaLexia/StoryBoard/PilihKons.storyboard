@@ -82,6 +82,10 @@
                                 <rect key="frame" x="0.0" y="349" width="82" height="187"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rBR-jH-hCw">
+                                <rect key="frame" x="0.0" y="594" width="1194" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uh0-MU-2ii"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -89,6 +93,8 @@
                     <connections>
                         <outlet property="arrowButton" destination="j1W-4K-i4a" id="Tcv-ja-7r9"/>
                         <outlet property="bButton" destination="tWC-WH-cxy" id="BIc-CK-4At"/>
+                        <outlet property="background" destination="dv6-bk-bxc" id="DA5-Yk-SdU"/>
+                        <outlet property="bantuanBoard" destination="rBR-jH-hCw" id="oqA-Mm-6Cr"/>
                         <outlet property="cButton" destination="Gav-9q-uSf" id="WBl-Yt-4BS"/>
                         <outlet property="dButton" destination="jqp-4F-ZBv" id="Jca-yR-1qU"/>
                         <outlet property="fButton" destination="yKw-7f-p8h" id="7Sg-8e-Znm"/>
@@ -98,7 +104,7 @@
                         <outlet property="kButton" destination="NZ3-MQ-swY" id="Bzh-FR-NEO"/>
                         <outlet property="lButton" destination="xNw-ro-NTK" id="15q-bG-eHM"/>
                         <outlet property="mButton" destination="O0A-QX-3GK" id="Q0h-1y-z7S"/>
-                        <outlet property="maskot" destination="fQ0-Fx-Ilm" id="3BP-o3-gi1"/>
+                        <outlet property="maskot" destination="fQ0-Fx-Ilm" id="bpg-O5-aXm"/>
                         <outlet property="nButton" destination="wvm-zH-7KH" id="kdz-tr-SmT"/>
                         <outlet property="nextActivity" destination="BBU-PR-5Iz" id="EFr-Zw-dHp"/>
                         <outlet property="prevActivity" destination="4Wb-RH-1Bu" id="jy6-z6-WMn"/>

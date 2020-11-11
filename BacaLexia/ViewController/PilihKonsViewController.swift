@@ -21,6 +21,9 @@ class PilihKonsViewController: UIViewController {
     
     var state: Int = 0
     
+    @IBOutlet weak var background: UIImageView!
+    @IBOutlet weak var bantuanBoard: UIImageView!
+    @IBOutlet weak var maskot: UIButton!
     @IBOutlet weak var arrowButton: UIImageView!
     @IBOutlet weak var bButton: UIImageView!
     @IBOutlet weak var cButton: UIImageView!
@@ -35,13 +38,15 @@ class PilihKonsViewController: UIViewController {
     @IBOutlet weak var nButton: UIImageView!
     @IBOutlet weak var nextActivity: UIImageView!
     @IBOutlet weak var prevActivity: UIImageView!
-    @IBOutlet weak var maskot: UIButton!
+   
     
     override func viewDidLoad() {
     super.viewDidLoad()
         self.selectedArrayOfConsonant = arrayOfConsonantOne
         goToNextActivity()
         backToPilihHuruf()
+        bantuanDisplay()
+        backgroundTap()
     
     let gestureB =  UITapGestureRecognizer(target: self, action: #selector(imageBTapped))
     bButton.isUserInteractionEnabled = true
@@ -188,6 +193,16 @@ func playSoundFalse() {
     
 
 //Func Image Tappped
+    
+    func backgroundTap(){
+        let gesture =  UITapGestureRecognizer(target: self, action: #selector(backgroundImageTapped))
+        background.isUserInteractionEnabled = true
+        gesture.numberOfTapsRequired = 1
+        background.addGestureRecognizer(gesture)
+    }
+    @objc func backgroundImageTapped(){
+        bantuanBoard.image = nil
+    }
 @objc func imageBTapped(){
     
     playSoundFalse()
@@ -362,6 +377,19 @@ func playSoundFalse() {
         prevActivity.image = #imageLiteral(resourceName: "arrow2")
        // bantuanBoard.image = nil
     }
-    
-    
+    func bantuanDisplay(){
+        let gesture =  UITapGestureRecognizer(target: self, action: #selector(maskotTapped))
+        maskot.isUserInteractionEnabled = true
+        gesture.numberOfTapsRequired = 1
+        maskot.addGestureRecognizer(gesture)
+    }
+    @objc func maskotTapped(){
+            isMascotShow.toggle()
+            if(isMascotShow) {
+                bantuanBoard.image = #imageLiteral(resourceName: "Text Box")
+     //           playSound(soundName: "intruksiDengar")
+            }else{
+                bantuanBoard.image = nil
+            }
+    }
 }
