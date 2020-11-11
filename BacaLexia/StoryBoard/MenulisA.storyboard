@@ -31,7 +31,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" id="GSC-0F-Rqa">
-                                <rect key="frame" x="255" y="-97" width="679" height="255"/>
+                                <rect key="frame" x="254" y="-97" width="679" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 6boardbesar" id="tUn-22-AZB">
@@ -61,7 +61,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Text Box Menulis" id="W33-a1-9Ed">
-                                        <rect key="frame" x="-12" y="-13" width="836" height="324"/>
+                                        <rect key="frame" x="-12" y="-13" width="835" height="324"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                     </imageView>
                                 </subviews>
@@ -80,6 +80,8 @@
                     <connections>
                         <outlet property="KoalaBtn" destination="Q29-2C-5DK" id="YCu-Gk-RNz"/>
                         <outlet property="TextBantuan" destination="W33-a1-9Ed" id="cKH-hY-b9N"/>
+                        <outlet property="backActivityButton" destination="iBd-f8-xTc" id="fir-Do-xf2"/>
+                        <outlet property="backButton" destination="v7i-KA-RRk" id="ypA-wK-KnV"/>
                         <outlet property="hurufImage" destination="OpL-ms-Y4A" id="5hZ-RE-jOZ"/>
                     </connections>
                 </viewController>

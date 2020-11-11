@@ -142,12 +142,14 @@ class AhurufViewController: UIViewController {
     }
     
     @objc func nextActivityTapped(){
-        
-        state = 0
-        while state > -1 {
-            
-            state += 1
-            if state == 2 {
+        state += 1
+            if state == 1 {
+            nameBoard.image = #imageLiteral(resourceName: "Text Box")
+            playSound(soundName: "mengucapkan")
+            prevActivity.image = #imageLiteral(resourceName: "arrow2")
+            bantuanBoard.image = nil
+            }
+            else if state == 2 {
                 if huruf == "A"{
 
                         let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
@@ -213,13 +215,7 @@ class AhurufViewController: UIViewController {
 
 
                 }
-            }else if state == 1 {
-                nameBoard.image = #imageLiteral(resourceName: "Text Box")
-                playSound(soundName: "mengucapkan")
-                prevActivity.image = #imageLiteral(resourceName: "arrow2")
-                bantuanBoard.image = nil
-                }
-        }
+            }
         
 //
 //        let vc = storyboard? .instantiateViewController(identifier: "MenulisA") as! MenulisAViewController
