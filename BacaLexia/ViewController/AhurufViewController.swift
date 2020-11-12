@@ -28,17 +28,13 @@ class AhurufViewController: UIViewController {
     @IBOutlet weak var maskot: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         backToPilihHuruf()
         pilihPic()
         mendengar()
         goToNextActivity()
         bantuanDisplay()
         backgroundTap()
-        
-        
-       
+        updateView()
     }
 
     func animationfromRight(){
@@ -63,7 +59,6 @@ class AhurufViewController: UIViewController {
     }
     func goToNextActivity(){
         goToPrevActivity()
-        
         let gesture =  UITapGestureRecognizer(target: self, action: #selector(nextActivityTapped))
         nextActivity.isUserInteractionEnabled = true
         gesture.numberOfTapsRequired = 1
@@ -224,6 +219,7 @@ class AhurufViewController: UIViewController {
         }
         bantuanBoard.image = nil
     }
+
     @objc func prevActivityTapped(){
         state = 0
         nameBoard.image = #imageLiteral(resourceName: "mendengarBoard")
@@ -236,6 +232,7 @@ class AhurufViewController: UIViewController {
         playSound(soundName: "mengucapkan")
         prevActivity.image = #imageLiteral(resourceName: "arrow2")
         bantuanBoard.image = nil
+
     }
     @objc func backgroundImageTapped(){
         bantuanBoard.image = nil
@@ -255,7 +252,8 @@ class AhurufViewController: UIViewController {
             if(isMascotShow) {
                 bantuanBoard.image = #imageLiteral(resourceName: "tekanGelembungUcapkan")
                 playSound(soundName: "intruksiUcap")
-        }else{
+        }
+            else{
             bantuanBoard.image = nil
         }
     }
