@@ -12,6 +12,7 @@ class PilihVViewController: UIViewController {
     
     var bunyiPopUp: AVAudioPlayer!
     var bunyiOne: AVAudioPlayer!
+    var bunyiBantuan: AVAudioPlayer!
     
     var isMascotShow: Bool = false
     
@@ -38,7 +39,7 @@ class PilihVViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    backToPilihHuruf()
+        backToPilihHuruf()
         bantuanDisplay()
         backgroundTap()
         
@@ -86,11 +87,17 @@ class PilihVViewController: UIViewController {
     @objc func backimageTapped(){
         
         animationfromRight()
-     //  playSound(soundName: "pilihlahHuruf")
-     //   bantuanBoard.image = nil
-        dismiss(animated: true, completion: nil)
+       playSound(soundName: "pilihlahHuruf")
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "Main") as! MainViewController
+       
+        newViewController.modalPresentationStyle = .fullScreen
+                self.present(newViewController, animated: false, completion: nil)
         
     }
+
         
    /* func playSound(saundName:String) {
         let url = Bundle.main.url(forResource: saundName ,withExtension: "wav")
@@ -98,7 +105,7 @@ class PilihVViewController: UIViewController {
         bunyiPopUp.play()  */
         
     func playSoundFalse() {
-            guard let url = Bundle.main.url(forResource: "A", withExtension: "wav") else { return }
+            guard let url = Bundle.main.url(forResource: "gelembung", withExtension: "wav") else { return }
 
             do {
                 try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
@@ -233,11 +240,16 @@ class PilihVViewController: UIViewController {
         gesture.numberOfTapsRequired = 1
         maskot.addGestureRecognizer(gesture)
     }
+    func playSound(soundName: String) {
+        let url = Bundle.main.url(forResource: soundName, withExtension: "wav")
+        bunyiBantuan = try! AVAudioPlayer(contentsOf: url!)
+        bunyiBantuan.play()
+    }
     @objc func maskotTapped(){
             isMascotShow.toggle()
             if(isMascotShow) {
                 bantuanBoard.image = #imageLiteral(resourceName: "pilhHurufBantuan")
-        //        playSound(soundName: "intruksiDengar")
+                playSound(soundName: "instruksiPilihHuruf")
             }else{
                 bantuanBoard.image = nil
             }

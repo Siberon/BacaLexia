@@ -50,7 +50,7 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
     }
     
     @objc func goToPrevActivity(){
-      //  let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
+      let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
         
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "AhurufViewController") as! AhurufViewController
         newViewController.huruf = huruf
@@ -58,6 +58,7 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
         playSound(soundName: "mengucapkan")
         newViewController.modalPresentationStyle = .fullScreen
             self.present(newViewController, animated: false, completion: nil)
+        
         
     }
     
@@ -78,8 +79,12 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
     }
     
     func backToPilihHuruf(){
-     
-        dismiss(animated: true, completion: nil)
+        let gesture =  UITapGestureRecognizer(target: self, action: #selector(backimageTapped))
+        backButton.isUserInteractionEnabled = true
+        gesture.numberOfTapsRequired = 1
+        backButton.addGestureRecognizer(gesture)
+      
+        //dismiss(animated: true, completion: nil)
         
     }
     
