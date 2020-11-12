@@ -146,10 +146,10 @@
 			isa = PBXGroup;
 			children = (
 				70777BEE25555BE500E78239 /* Main.storyboard */,
-				CD7844D92552C0F200BCA0E5 /* MenulisA.storyboard */,
 				7065FAE825532A97004ABF4A /* PilihV.storyboard */,
 				70776F2C255936D400345E04 /* PilihKons.storyboard */,
 				7065FAED25532AAB004ABF4A /* Ahuruf.storyboard */,
+				CD7844D92552C0F200BCA0E5 /* MenulisA.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -158,10 +158,10 @@
 			isa = PBXGroup;
 			children = (
 				70777BF625555C1900E78239 /* MainViewController.swift */,
-				CD7844DE2552D01C00BCA0E5 /* MenulisAViewController.swift */,
 				7065FAF225532B09004ABF4A /* PilihVViewController.swift */,
 				701986BD2559AF6A00DA938E /* PilihKonsViewController.swift */,
 				7065FAF725532B29004ABF4A /* AhurufViewController.swift */,
+				CD7844DE2552D01C00BCA0E5 /* MenulisAViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";

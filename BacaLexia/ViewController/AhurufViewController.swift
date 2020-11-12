@@ -34,7 +34,7 @@ class AhurufViewController: UIViewController {
         goToNextActivity()
         bantuanDisplay()
         backgroundTap()
-        updateView()
+        //updateView()
     }
 
     func animationfromRight(){
@@ -164,6 +164,7 @@ class AhurufViewController: UIViewController {
     }
     
     @objc func hurufImageTapped(){
+        
         if huruf == "A"{
             playSound(soundName: "A")
         } else if huruf == "O"{
@@ -227,13 +228,21 @@ class AhurufViewController: UIViewController {
         bantuanBoard.image = nil
     }
     @objc func nextActivityTapped(){
+        
+        if(state == 0){
         state = 1
         nameBoard.image = #imageLiteral(resourceName: "mengucapBoard")
         playSound(soundName: "mengucapkan")
         prevActivity.image = #imageLiteral(resourceName: "arrow2")
         bantuanBoard.image = nil
-
-    }
+        } else if (state == 1){let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
+            
+            newViewController.modalPresentationStyle = .fullScreen
+            self.present(newViewController, animated: false, completion: nil)
+        }
+            
+        }
     @objc func backgroundImageTapped(){
         bantuanBoard.image = nil
     }
