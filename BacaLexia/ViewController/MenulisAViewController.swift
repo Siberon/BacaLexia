@@ -11,6 +11,7 @@ import PencilKit
 
 class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPickerObserver {
     
+
     @IBOutlet weak var mCanvas: PKCanvasView!
     @IBOutlet weak var TextBantuan: UIImageView!
     @IBOutlet weak var KoalaBtn: UIImageView!
@@ -31,12 +32,14 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
     var huruf : String = ""
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         backToPrevActivity()
         backToPilihHuruf()
         checkAlphabets()
         ShowGuideSound()
         showguide()
+        showCanvas()
     }
     
     @objc func backToPrevActivity(){
@@ -148,11 +151,21 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
     
     
     func showCanvas(){
-//        mCanvas.delegate = self
-////        mCanvas.tool = PKInkingTool(.marker,color: .blue)
-//        mCanvas.drawing = drawing
-//        mCanvas.alwaysBounceVertical = true
-//        mCanvas.drawingPolicy = .anyInput
+        
+//        self.mCanvas = PKCanvasView()
+      
+        self.mCanvas.delegate = self
+        self.mCanvas.backgroundColor = .clear
+        self.mCanvas.isOpaque = false
+        self.mCanvas.tool = PKInkingTool(.marker,color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
+        self.mCanvas.drawing = drawing
+        self.mCanvas.alwaysBounceVertical = true
+        if #available(iOS 14.0, *) {
+            mCanvas.drawingPolicy = .anyInput
+        } else {
+            // Fallback on earlier versions
+        }
+
 //
 //        // Set up the tool picker
 //        if #available(iOS 14.1, *) {

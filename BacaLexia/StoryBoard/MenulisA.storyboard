@@ -17,11 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qfZ-QN-39R" customClass="PKCanvasView">
-                                <rect key="frame" x="217" y="151" width="760" height="423"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background " id="zR1-pG-usY">
                                 <rect key="frame" x="-81" y="0.0" width="1457" height="1149"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -46,16 +41,20 @@
                                     <outletCollection property="gestureRecognizers" destination="3vV-B1-4Ff" appends="YES" id="Udt-7y-csF"/>
                                 </connections>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="OpL-ms-Y4A" userLabel="HurufImage">
+                                <rect key="frame" x="443" y="184" width="306" height="341"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="menulis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksS-MO-Qv4">
                                 <rect key="frame" x="268" y="34" width="655" height="102"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="88"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="OpL-ms-Y4A" userLabel="HurufImage">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qfZ-QN-39R" customClass="PKCanvasView">
                                 <rect key="frame" x="443" y="184" width="306" height="341"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VVq-nu-k6g">
                                 <rect key="frame" x="22" y="523" width="813" height="302"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
@@ -83,12 +82,13 @@
                         <outlet property="backActivityButton" destination="iBd-f8-xTc" id="fir-Do-xf2"/>
                         <outlet property="backButton" destination="v7i-KA-RRk" id="ypA-wK-KnV"/>
                         <outlet property="hurufImage" destination="OpL-ms-Y4A" id="5hZ-RE-jOZ"/>
+                        <outlet property="mCanvas" destination="qfZ-QN-39R" id="G6j-yc-Cvp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4g5-ZM-gfo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="3vV-B1-4Ff"/>
             </objects>
-            <point key="canvasLocation" x="-524.1206030150754" y="-239.56834532374103"/>
+            <point key="canvasLocation" x="-660" y="-217"/>
         </scene>
     </scenes>
     <resources>
