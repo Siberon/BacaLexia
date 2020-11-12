@@ -1,0 +1,18 @@
+{
+  "images" : [
+    {
+      "filename" : "mengucapBoard.pdf",
+      "idiom" : "universal"
+    },
+    {
+      "filename" : "mengucapBoard.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

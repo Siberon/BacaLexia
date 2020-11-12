@@ -14,6 +14,8 @@ class MainViewController: UIViewController {
     var bunyiOne: AVAudioPlayer!
     var isMascotShow: Bool = false
    
+    @IBOutlet weak var xxButton: UIImageView!
+    @IBOutlet weak var panduanMain: UIImageView!
     @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var vocalButton: UIImageView!
     @IBOutlet weak var konsonanButton: UIImageView!
@@ -24,6 +26,9 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         bantuanDisplay()
+        xButtonAction()
+        
+        
       
         let gestureVocal =  UITapGestureRecognizer(target: self, action: #selector(imageVocalTapped))
         vocalButton.isUserInteractionEnabled = true
@@ -101,9 +106,9 @@ class MainViewController: UIViewController {
     @objc func imageVocalTapped(){
         
         
-        playSoundFalse()
+       playSoundFalse()
         animationfromRight()
-        playSoundTrue()
+      //  playSoundTrue()
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "PilihV", bundle: nil)
         
@@ -116,7 +121,7 @@ class MainViewController: UIViewController {
         
         playSoundFalse()
         animationfromRight()
-        playSoundTrue()
+     //   playSoundTrue()
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "PilihKons", bundle: nil)
         
@@ -132,7 +137,8 @@ class MainViewController: UIViewController {
         background.addGestureRecognizer(gesture)
     }
     @objc func backgroundImageTapped(){
-        bantuanBoard.image = nil
+        panduanMain.image = nil
+        xxButton.image = nil
     }
     func bantuanDisplay(){
         let gesture =  UITapGestureRecognizer(target: self, action: #selector(maskotTapped))
@@ -140,11 +146,25 @@ class MainViewController: UIViewController {
         gesture.numberOfTapsRequired = 1
         maskot.addGestureRecognizer(gesture)
     }
+    func xButtonAction(){
+        let gesture =  UITapGestureRecognizer(target: self, action: #selector(xxButtonTapped))
+        xxButton.isUserInteractionEnabled = true
+        gesture.numberOfTapsRequired = 1
+        xxButton.addGestureRecognizer(gesture)
+        
+    }
+    @objc func xxButtonTapped(){
+        
+        panduanMain.image = nil
+        xxButton.image = nil
+    }
     
     @objc func maskotTapped(){
             isMascotShow.toggle()
             if(isMascotShow) {
-                bantuanBoard.image = #imageLiteral(resourceName: "Text Box")
+                panduanMain.image = #imageLiteral(resourceName: "panduanMainMenu")
+                xxButton.image = #imageLiteral(resourceName: "xButton")
+                
         //        playSound(soundName: "intruksiDengar")
             }else{
                 bantuanBoard.image = nil

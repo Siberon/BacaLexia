@@ -101,7 +101,7 @@ class AhurufViewController: UIViewController {
         if huruf == "A"{
             hurufImage.image = #imageLiteral(resourceName: "a")
         }else if huruf == "I"{
-            hurufImage.image = #imageLiteral(resourceName: "i1")
+            hurufImage.image = #imageLiteral(resourceName: "i")
         }else if huruf == "O" {
             hurufImage.image = #imageLiteral(resourceName: "o")
         }else if huruf == "U"{
@@ -226,13 +226,13 @@ class AhurufViewController: UIViewController {
     }
     @objc func prevActivityTapped(){
         state = 0
-        nameBoard.image = #imageLiteral(resourceName: "board")
+        nameBoard.image = #imageLiteral(resourceName: "mendengarBoard")
         playSound(soundName: "mendengarkan")
         bantuanBoard.image = nil
     }
     @objc func nextActivityTapped(){
         state = 1
-        nameBoard.image = #imageLiteral(resourceName: "Text Box")
+        nameBoard.image = #imageLiteral(resourceName: "mengucapBoard")
         playSound(soundName: "mengucapkan")
         prevActivity.image = #imageLiteral(resourceName: "arrow2")
         bantuanBoard.image = nil
@@ -245,15 +245,15 @@ class AhurufViewController: UIViewController {
         if(state == 0){
             isMascotShow.toggle()
             if(isMascotShow) {
-                bantuanBoard.image = #imageLiteral(resourceName: "Text Box")
-                playSound(soundName: "intruksiDengar")
+                bantuanBoard.image = #imageLiteral(resourceName: "tekanGelembungDengar")
+            //    playSound(soundName: "")
             }else{
                 bantuanBoard.image = nil
             }
            
         } else if(state == 1) {isMascotShow.toggle()
             if(isMascotShow) {
-                bantuanBoard.image = #imageLiteral(resourceName: "board")
+                bantuanBoard.image = #imageLiteral(resourceName: "tekanGelembungUcapkan")
                 playSound(soundName: "intruksiUcap")
         }else{
             bantuanBoard.image = nil

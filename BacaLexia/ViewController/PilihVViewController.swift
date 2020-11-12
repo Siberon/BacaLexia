@@ -39,7 +39,7 @@ class PilihVViewController: UIViewController {
         super.viewDidLoad()
         
     backToPilihHuruf()
-    bantuanDisplay()
+        bantuanDisplay()
         backgroundTap()
         
         let gesture =  UITapGestureRecognizer(target: self, action: #selector(imageaTapped))
@@ -236,8 +236,8 @@ class PilihVViewController: UIViewController {
     @objc func maskotTapped(){
             isMascotShow.toggle()
             if(isMascotShow) {
-                bantuanBoard.image = #imageLiteral(resourceName: "Text Box")
-     //           playSound(soundName: "intruksiDengar")
+                bantuanBoard.image = #imageLiteral(resourceName: "pilhHurufBantuan")
+        //        playSound(soundName: "intruksiDengar")
             }else{
                 bantuanBoard.image = nil
             }

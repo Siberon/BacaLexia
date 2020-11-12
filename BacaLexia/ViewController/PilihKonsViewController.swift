@@ -327,15 +327,18 @@ func playSoundFalse() {
 
 }
 @objc func imageNTapped(){
-    playSoundFalse()
-    animationfromRight()
-    playSoundTrue()
+    
 
     let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
     let newViewController = storyBoard.instantiateViewController(withIdentifier: "AhurufViewController") as! AhurufViewController
-    newViewController.huruf = selectedArrayOfConsonant[10]
-    newViewController.modalPresentationStyle = .fullScreen
-            self.present(newViewController, animated: false, completion: nil)
+    if selectedArrayOfConsonant[10] != ""{
+        playSoundFalse()
+        animationfromRight()
+        playSoundTrue()
+        newViewController.huruf = selectedArrayOfConsonant[10]
+        newViewController.modalPresentationStyle = .fullScreen
+                self.present(newViewController, animated: false, completion: nil)
+    }
 
 }
     @objc func prevActivityTapped(){
@@ -386,7 +389,7 @@ func playSoundFalse() {
     @objc func maskotTapped(){
             isMascotShow.toggle()
             if(isMascotShow) {
-                bantuanBoard.image = #imageLiteral(resourceName: "Text Box")
+                bantuanBoard.image = #imageLiteral(resourceName: "pilhHurufBantuan")
      //           playSound(soundName: "intruksiDengar")
             }else{
                 bantuanBoard.image = nil
