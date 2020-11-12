@@ -16,17 +16,15 @@ class AhurufViewController: UIViewController {
     var isMascotShow: Bool = false
     
     var state: Int = 0
+    
    
     @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var arrowButton: UIImageView!
-    
     @IBOutlet weak var hurufImage: UIImageView!
     @IBOutlet weak var bantuanBoard: UIImageView!
     @IBOutlet weak var nameBoard: UIImageView!
-    
     @IBOutlet weak var nextActivity: UIImageView!
     @IBOutlet weak var prevActivity: UIImageView!
-    
     @IBOutlet weak var maskot: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,18 +94,64 @@ class AhurufViewController: UIViewController {
     
     func pilihPic(){
         if huruf == "A"{
-            hurufImage.image = #imageLiteral(resourceName: "a1")
+            hurufImage.image = #imageLiteral(resourceName: "a")
         }else if huruf == "I"{
-            hurufImage.image = #imageLiteral(resourceName: "i1")
+            hurufImage.image = #imageLiteral(resourceName: "i")
         }else if huruf == "O" {
-            hurufImage.image = #imageLiteral(resourceName: "o1")
+            hurufImage.image = #imageLiteral(resourceName: "o")
         }else if huruf == "U"{
             hurufImage.image = #imageLiteral(resourceName: "u")
         }else if huruf == "E"{
             hurufImage.image = #imageLiteral(resourceName: "e")
         }else if huruf == "O"{
-            hurufImage.image = #imageLiteral(resourceName: "u")
+            hurufImage.image = #imageLiteral(resourceName: "o")
+        }else if huruf == "B"{
+            hurufImage.image = #imageLiteral(resourceName: "b")
+        }else if huruf == "C"{
+            hurufImage.image = #imageLiteral(resourceName: "c")
+        }else if huruf == "D"{
+            hurufImage.image = #imageLiteral(resourceName: "d")
+        }else if huruf == "F"{
+            hurufImage.image = #imageLiteral(resourceName: "f")
+        }else if huruf == "G"{
+            hurufImage.image = #imageLiteral(resourceName: "g")
+        }else if huruf == "H"{
+            hurufImage.image = #imageLiteral(resourceName: "h")
+        }else if huruf == "J"{
+            hurufImage.image = #imageLiteral(resourceName: "j")
+        }else if huruf == "K"{
+            hurufImage.image = #imageLiteral(resourceName: "k")
+        }else if huruf == "L"{
+            hurufImage.image = #imageLiteral(resourceName: "l")
+        }else if huruf == "M"{
+            hurufImage.image = #imageLiteral(resourceName: "m")
+        }else if huruf == "N"{
+            hurufImage.image = #imageLiteral(resourceName: "n")
+        }else if huruf == "P"{
+            hurufImage.image = #imageLiteral(resourceName: "p")
+        }else if huruf == "Q"{
+            hurufImage.image = #imageLiteral(resourceName: "q")
+        }else if huruf == "R"{
+            hurufImage.image = #imageLiteral(resourceName: "r")
+        }else if huruf == "S"{
+            hurufImage.image = #imageLiteral(resourceName: "s")
+        }else if huruf == "T"{
+            hurufImage.image = #imageLiteral(resourceName: "t")
         }
+        else if huruf == "V"{
+            hurufImage.image = #imageLiteral(resourceName: "v")
+        }else if huruf == "W"{
+            hurufImage.image = #imageLiteral(resourceName: "w")
+        }else if huruf == "X"{
+            hurufImage.image = #imageLiteral(resourceName: "x")
+        }else if huruf == "Y"{
+            hurufImage.image = #imageLiteral(resourceName: "y")
+        }else if huruf == "Z"{
+            hurufImage.image = #imageLiteral(resourceName: "z")
+        }else if huruf == ""{
+            hurufImage.image = nil
+        }
+        
     }
 
     @objc func backimageTapped(){
@@ -115,13 +159,7 @@ class AhurufViewController: UIViewController {
         animationfromRight()
        playSound(soundName: "pilihlahHuruf")
         bantuanBoard.image = nil
-        
-        let storyBoard: UIStoryboard = UIStoryboard(name: "PilihV", bundle: nil)
-        
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "PilihVViewController") as! PilihVViewController
-       
-        newViewController.modalPresentationStyle = .fullScreen
-                self.present(newViewController, animated: false, completion: nil)
+        dismiss(animated: true, completion: nil)
         
     }
     
@@ -136,60 +174,83 @@ class AhurufViewController: UIViewController {
             playSound(soundName: "E")
         } else if huruf == "U"{
             playSound(soundName: "U")
+        }else if huruf == "B"{
+            playSound(soundName: "O")
+        } else if huruf == "C"{
+            playSound(soundName: "I")
+        } else if huruf == "D"{
+            playSound(soundName: "E")
+        } else if huruf == "F"{
+            playSound(soundName: "U")
+        }else if huruf == "G"{
+            playSound(soundName: "O")
+        } else if huruf == "H"{
+            playSound(soundName: "I")
+        } else if huruf == "J"{
+            playSound(soundName: "E")
+        } else if huruf == "K"{
+            playSound(soundName: "U")
+        }else if huruf == "L"{
+            playSound(soundName: "O")
+        } else if huruf == "M"{
+            playSound(soundName: "I")
+        } else if huruf == "N"{
+            playSound(soundName: "E")
+        }else if huruf == "P"{
+            playSound(soundName: "A")
+        } else if huruf == "Q"{
+            playSound(soundName: "O")
+        } else if huruf == "R"{
+            playSound(soundName: "I")
+        } else if huruf == "S"{
+            playSound(soundName: "E")
+        } else if huruf == "T"{
+            playSound(soundName: "U")
+        }else if huruf == "V"{
+            playSound(soundName: "O")
+        } else if huruf == "W"{
+            playSound(soundName: "I")
+        } else if huruf == "X"{
+            playSound(soundName: "E")
+        } else if huruf == "Y"{
+            playSound(soundName: "U")
+        }else if huruf == "Z"{
+            playSound(soundName: "O")
         }
         bantuanBoard.image = nil
     }
-    
-    @objc func nextActivityTapped(){
-        state += 1
-        updateView()
-//        let vc = storyboard? .instantiateViewController(identifier: "MenulisA") as! MenulisAViewController
-//
+
+    @objc func prevActivityTapped(){
+        state = 0
+        nameBoard.image = #imageLiteral(resourceName: "mendengarBoard")
+        playSound(soundName: "mendengarkan")
+        bantuanBoard.image = nil
     }
-    
-    func updateView(){
-        
-            if state == 1 {
-            nameBoard.image = #imageLiteral(resourceName: "Text Box")
-            playSound(soundName: "mengucapkan")
-            prevActivity.image = #imageLiteral(resourceName: "arrow2")
-            bantuanBoard.image = nil
-            }
-            else if state == 2 {
-                let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
-                
-                let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
-        
-                newViewController.huruf = huruf
-                
-                newViewController.modalPresentationStyle = .fullScreen
-                    self.present(newViewController, animated: false, completion: nil)
-                
-            }
-        
+    @objc func nextActivityTapped(){
+        state = 1
+        nameBoard.image = #imageLiteral(resourceName: "mengucapBoard")
+        playSound(soundName: "mengucapkan")
+        prevActivity.image = #imageLiteral(resourceName: "arrow2")
+        bantuanBoard.image = nil
+
     }
     @objc func backgroundImageTapped(){
         bantuanBoard.image = nil
     }
-    @objc func prevActivityTapped(){
-        state = 0
-        nameBoard.image = #imageLiteral(resourceName: "board")
-        playSound(soundName: "mendengarkan")
-        bantuanBoard.image = nil
-    }
+    
     @objc func maskotTapped(){
         if(state == 0){
             isMascotShow.toggle()
             if(isMascotShow) {
-                bantuanBoard.image = #imageLiteral(resourceName: "Text Box")
-                playSound(soundName: "intruksiDengar")
+                bantuanBoard.image = #imageLiteral(resourceName: "tekanGelembungDengar")
+            //    playSound(soundName: "")
             }else{
                 bantuanBoard.image = nil
             }
            
         } else if(state == 1) {isMascotShow.toggle()
             if(isMascotShow) {
-                bantuanBoard.image = #imageLiteral(resourceName: "board")
+                bantuanBoard.image = #imageLiteral(resourceName: "tekanGelembungUcapkan")
                 playSound(soundName: "intruksiUcap")
         }
             else{

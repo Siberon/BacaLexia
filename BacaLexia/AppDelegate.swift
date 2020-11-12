@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        //pilih start page
+
             self.window = UIWindow(frame: UIScreen.main.bounds)
              let storyboard = UIStoryboard(name: "PilihV", bundle: nil)
              
@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
              self.window?.rootViewController = initialViewController
              self.window?.makeKeyAndVisible()
         
+
         
         return true
     }
