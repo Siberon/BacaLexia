@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		701986BE2559AF6A00DA938E /* PilihKonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701986BD2559AF6A00DA938E /* PilihKonsViewController.swift */; };
 		7065FAE925532A97004ABF4A /* PilihV.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7065FAE825532A97004ABF4A /* PilihV.storyboard */; };
 		7065FAEE25532AAB004ABF4A /* Ahuruf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7065FAED25532AAB004ABF4A /* Ahuruf.storyboard */; };
 		7065FAF325532B09004ABF4A /* PilihVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065FAF225532B09004ABF4A /* PilihVViewController.swift */; };
@@ -16,6 +17,7 @@
 		70776F0D2558A67700345E04 /* intruksiUcap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70776F092558A67700345E04 /* intruksiUcap.wav */; };
 		70776F0E2558A67700345E04 /* intruksiDengar.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70776F0A2558A67700345E04 /* intruksiDengar.wav */; };
 		70776F132558A7BA00345E04 /* pilihlahHuruf.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70776F122558A7BA00345E04 /* pilihlahHuruf.wav */; };
+		70776F2D255936D400345E04 /* PilihKons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70776F2C255936D400345E04 /* PilihKons.storyboard */; };
 		70777BCC2554B51100E78239 /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BC52554B51000E78239 /* A.wav */; };
 		70777BCD2554B51100E78239 /* U.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BC62554B51000E78239 /* U.wav */; };
 		70777BCE2554B51100E78239 /* O.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70777BC72554B51000E78239 /* O.wav */; };
@@ -56,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		701986BD2559AF6A00DA938E /* PilihKonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihKonsViewController.swift; sourceTree = "<group>"; };
 		7065FAE825532A97004ABF4A /* PilihV.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PilihV.storyboard; sourceTree = "<group>"; };
 		7065FAED25532AAB004ABF4A /* Ahuruf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ahuruf.storyboard; sourceTree = "<group>"; };
 		7065FAF225532B09004ABF4A /* PilihVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihVViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 		70776F092558A67700345E04 /* intruksiUcap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = intruksiUcap.wav; sourceTree = "<group>"; };
 		70776F0A2558A67700345E04 /* intruksiDengar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = intruksiDengar.wav; sourceTree = "<group>"; };
 		70776F122558A7BA00345E04 /* pilihlahHuruf.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pilihlahHuruf.wav; sourceTree = "<group>"; };
+		70776F2C255936D400345E04 /* PilihKons.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PilihKons.storyboard; sourceTree = "<group>"; };
 		70777BC52554B51000E78239 /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
 		70777BC62554B51000E78239 /* U.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = U.wav; sourceTree = "<group>"; };
 		70777BC72554B51000E78239 /* O.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = O.wav; sourceTree = "<group>"; };
@@ -141,10 +145,10 @@
 		70A7E4B825529A1C00350315 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
-				CD7844D92552C0F200BCA0E5 /* MenulisA.storyboard */,
 				70777BEE25555BE500E78239 /* Main.storyboard */,
-				CD7D9FC9254FD39B008FC254 /* LaunchScreen.storyboard */,
+				CD7844D92552C0F200BCA0E5 /* MenulisA.storyboard */,
 				7065FAE825532A97004ABF4A /* PilihV.storyboard */,
+				70776F2C255936D400345E04 /* PilihKons.storyboard */,
 				7065FAED25532AAB004ABF4A /* Ahuruf.storyboard */,
 			);
 			path = StoryBoard;
@@ -153,9 +157,10 @@
 		70A7E4CE2552A17600350315 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CD7844DE2552D01C00BCA0E5 /* MenulisAViewController.swift */,
 				70777BF625555C1900E78239 /* MainViewController.swift */,
+				CD7844DE2552D01C00BCA0E5 /* MenulisAViewController.swift */,
 				7065FAF225532B09004ABF4A /* PilihVViewController.swift */,
+				701986BD2559AF6A00DA938E /* PilihKonsViewController.swift */,
 				7065FAF725532B29004ABF4A /* AhurufViewController.swift */,
 			);
 			path = ViewController;
@@ -186,6 +191,7 @@
 			children = (
 				CD7D9FBB254FD39A008FC254 /* AppDelegate.swift */,
 				CD7D9FBD254FD39A008FC254 /* SceneDelegate.swift */,
+				CD7D9FC9254FD39B008FC254 /* LaunchScreen.storyboard */,
 				CD7D9FC7254FD39B008FC254 /* Assets.xcassets */,
 				CD7D9FCC254FD39B008FC254 /* Info.plist */,
 				CD7D9FC4254FD39A008FC254 /* BacaLexia.xcdatamodeld */,
@@ -338,6 +344,7 @@
 				70777BD02554B51100E78239 /* I.wav in Resources */,
 				70777BCE2554B51100E78239 /* O.wav in Resources */,
 				70777BE72555225E00E78239 /* Dengar2.wav in Resources */,
+				70776F2D255936D400345E04 /* PilihKons.storyboard in Resources */,
 				CD7D9FCB254FD39B008FC254 /* LaunchScreen.storyboard in Resources */,
 				70776F0E2558A67700345E04 /* intruksiDengar.wav in Resources */,
 				CD7D9FC8254FD39B008FC254 /* Assets.xcassets in Resources */,
@@ -370,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701986BE2559AF6A00DA938E /* PilihKonsViewController.swift in Sources */,
 				CD7D9FC6254FD39A008FC254 /* BacaLexia.xcdatamodeld in Sources */,
 				7065FAF825532B29004ABF4A /* AhurufViewController.swift in Sources */,
 				CD7D9FBC254FD39A008FC254 /* AppDelegate.swift in Sources */,

@@ -13,7 +13,16 @@ class PilihVViewController: UIViewController {
     var bunyiPopUp: AVAudioPlayer!
     var bunyiOne: AVAudioPlayer!
     
+    var isMascotShow: Bool = false
+    
+    var state: Int = 0
+    
 
+    
+    @IBOutlet weak var background: UIImageView!
+    @IBOutlet weak var maskot: UIButton!
+    @IBOutlet weak var bantuanBoard: UIImageView!
+    @IBOutlet weak var arrowButton: UIImageView!
     @IBOutlet weak var aButton: UIImageView!
     
     @IBOutlet weak var iButton: UIImageView!
@@ -28,6 +37,10 @@ class PilihVViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    backToPilihHuruf()
+        bantuanDisplay()
+        backgroundTap()
         
         let gesture =  UITapGestureRecognizer(target: self, action: #selector(imageaTapped))
         aButton.isUserInteractionEnabled = true
@@ -64,7 +77,20 @@ class PilihVViewController: UIViewController {
         transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
         view.window!.layer.add(transition, forKey: kCATransition)
     }
-    
+    func backToPilihHuruf(){
+        let gesture =  UITapGestureRecognizer(target: self, action: #selector(backimageTapped))
+        arrowButton.isUserInteractionEnabled = true
+        gesture.numberOfTapsRequired = 1
+        arrowButton.addGestureRecognizer(gesture)
+    }
+    @objc func backimageTapped(){
+        
+        animationfromRight()
+     //  playSound(soundName: "pilihlahHuruf")
+     //   bantuanBoard.image = nil
+        dismiss(animated: true, completion: nil)
+        
+    }
         
    /* func playSound(saundName:String) {
         let url = Bundle.main.url(forResource: saundName ,withExtension: "wav")
@@ -192,4 +218,29 @@ class PilihVViewController: UIViewController {
                 self.present(newViewController, animated: false, completion: nil)
 
     }
+    func backgroundTap(){
+        let gesture =  UITapGestureRecognizer(target: self, action: #selector(backgroundImageTapped))
+        background.isUserInteractionEnabled = true
+        gesture.numberOfTapsRequired = 1
+        background.addGestureRecognizer(gesture)
+    }
+    @objc func backgroundImageTapped(){
+        bantuanBoard.image = nil
+    }
+    func bantuanDisplay(){
+        let gesture =  UITapGestureRecognizer(target: self, action: #selector(maskotTapped))
+        maskot.isUserInteractionEnabled = true
+        gesture.numberOfTapsRequired = 1
+        maskot.addGestureRecognizer(gesture)
+    }
+    @objc func maskotTapped(){
+            isMascotShow.toggle()
+            if(isMascotShow) {
+                bantuanBoard.image = #imageLiteral(resourceName: "pilhHurufBantuan")
+        //        playSound(soundName: "intruksiDengar")
+            }else{
+                bantuanBoard.image = nil
+            }
+    }
+    
 }
