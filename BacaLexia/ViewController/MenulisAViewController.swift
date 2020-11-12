@@ -23,6 +23,8 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
     var height :CGFloat = 500
     var width :CGFloat = 768
     
+    var state: Int = 2
+    
     var drawing = PKDrawing()
     var toolPicker : PKToolPicker!
     
@@ -45,72 +47,14 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
     }
     
     @objc func goToPrevActivity(){
-            if huruf == "A"{
-
-                    let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
-                    
-                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "AhurufViewController") as! AhurufViewController
-            
-                    newViewController.huruf = "A"
-
-                    newViewController.modalPresentationStyle = .fullScreen
-                        self.present(newViewController, animated: false, completion: nil)
-
-
-            } else if huruf == "O"{
-
-                let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
-                
-                let newViewController = storyBoard.instantiateViewController(withIdentifier: "AhurufViewController") as! AhurufViewController
-
-                newViewController.huruf = "O"
-
-                newViewController.modalPresentationStyle = .fullScreen
-                self.present(newViewController, animated: false, completion: nil)
-
-
-            } else if huruf == "I"{
-
-                let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
-                
-                let newViewController = storyBoard.instantiateViewController(withIdentifier: "AhurufViewController") as! AhurufViewController
-
-
-                    newViewController.huruf = "I"
-                
-                    newViewController.modalPresentationStyle = .fullScreen
-                        self.present(newViewController, animated: false, completion: nil)
-
-
-            } else if huruf == "E"{
-
-                let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
-                
-                let newViewController = storyBoard.instantiateViewController(withIdentifier: "AhurufViewController") as! AhurufViewController
-
-
-                newViewController.huruf = "E"
-                
-                    newViewController.modalPresentationStyle = .fullScreen
-                        self.present(newViewController, animated: false, completion: nil)
-
-
-
-            } else if huruf == "U"{
-
-                let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
-                
-                let newViewController = storyBoard.instantiateViewController(withIdentifier: "AhurufViewController") as! AhurufViewController
-
-
-                newViewController.huruf = "U"
-
-                    newViewController.modalPresentationStyle = .fullScreen
-                        self.present(newViewController, animated: false, completion: nil)
-
-
-            }
-        playSound(soundName: "mendengarkan")
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
+        
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "AhurufViewController") as! AhurufViewController
+        newViewController.huruf = huruf
+        newViewController.state = 1
+        playSound(soundName: "mengucapkan")
+        newViewController.modalPresentationStyle = .fullScreen
+            self.present(newViewController, animated: false, completion: nil)
     }
     
     
