@@ -44,6 +44,7 @@
 		CDCE2CA92558F04A00851650 /* ShowGuide.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CDCE2CA82558F04A00851650 /* ShowGuide.m4a */; };
 		F61B0A3C255E5BA00056A8AA /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = F61B0A3A255E5BA00056A8AA /* A.wav */; };
 		F61B0A3D255E5BA00056A8AA /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = F61B0A3B255E5BA00056A8AA /* E.wav */; };
+		F61B0A42255E61010056A8AA /* AHurufExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B0A41255E61010056A8AA /* AHurufExtention.swift */; };
 		F67771AA255D6DA1000E7924 /* PilihVViewController+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67771A9255D6DA1000E7924 /* PilihVViewController+Extention.swift */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +109,7 @@
 		CDCE2CA82558F04A00851650 /* ShowGuide.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShowGuide.m4a; sourceTree = "<group>"; };
 		F61B0A3A255E5BA00056A8AA /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
 		F61B0A3B255E5BA00056A8AA /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
+		F61B0A41255E61010056A8AA /* AHurufExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHurufExtention.swift; sourceTree = "<group>"; };
 		F67771A9255D6DA1000E7924 /* PilihVViewController+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilihVViewController+Extention.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +184,7 @@
 				F67771A9255D6DA1000E7924 /* PilihVViewController+Extention.swift */,
 				701986BD2559AF6A00DA938E /* PilihKonsViewController.swift */,
 				7065FAF725532B29004ABF4A /* AhurufViewController.swift */,
+				F61B0A41255E61010056A8AA /* AHurufExtention.swift */,
 				CD7844DE2552D01C00BCA0E5 /* MenulisAViewController.swift */,
 			);
 			path = ViewController;
@@ -407,6 +410,7 @@
 				701986BE2559AF6A00DA938E /* PilihKonsViewController.swift in Sources */,
 				CD7D9FC6254FD39A008FC254 /* BacaLexia.xcdatamodeld in Sources */,
 				7065FAF825532B29004ABF4A /* AhurufViewController.swift in Sources */,
+				F61B0A42255E61010056A8AA /* AHurufExtention.swift in Sources */,
 				CD7D9FBC254FD39A008FC254 /* AppDelegate.swift in Sources */,
 				70777BF725555C1900E78239 /* MainViewController.swift in Sources */,
 				7065FAF325532B09004ABF4A /* PilihVViewController.swift in Sources */,

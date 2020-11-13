@@ -7,13 +7,19 @@
 
 import UIKit
 import AVFoundation
-
+import Speech
 
 class AhurufViewController: UIViewController {
     
     var bunyiHuruf : AVAudioPlayer!
     var huruf : String = ""
+    var stringListen : String = ""
     var isMascotShow: Bool = false
+    
+    
+    var recognizer = SFSpeechRecognizer()
+    var request = SFSpeechAudioBufferRecognitionRequest()
+    let engine = AVAudioEngine()
     
     var state: Int = 0
     
@@ -90,10 +96,17 @@ class AhurufViewController: UIViewController {
     }
     func mendengar(){
         
-        let gestureDengar =  UITapGestureRecognizer(target: self, action: #selector(hurufImageTapped))
-        hurufImage.isUserInteractionEnabled = true
-        gestureDengar.numberOfTapsRequired = 1
-        hurufImage.addGestureRecognizer(gestureDengar)
+        if state == 0{
+            let gestureDengar =  UITapGestureRecognizer(target: self, action: #selector(hurufImageTapped))
+            hurufImage.isUserInteractionEnabled = true
+            gestureDengar.numberOfTapsRequired = 1
+            hurufImage.addGestureRecognizer(gestureDengar)
+        }else if state == 1{
+            let gestureDengar =  UITapGestureRecognizer(target: self, action: #selector(hurufImageLongTapped))
+            hurufImage.isUserInteractionEnabled = true
+            gestureDengar.numberOfTapsRequired = 1
+            hurufImage.addGestureRecognizer(gestureDengar)
+        }
         
     }
     func backgroundTap(){
@@ -250,6 +263,7 @@ class AhurufViewController: UIViewController {
             playSound(soundName: "mengucapkan")
             prevActivity.image = #imageLiteral(resourceName: "arrow2")
             bantuanBoard.image = nil
+            mendengar()
         } else if (state == 1){
             let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
             let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
