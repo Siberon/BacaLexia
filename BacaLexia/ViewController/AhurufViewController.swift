@@ -45,6 +45,16 @@ class AhurufViewController: UIViewController {
         transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
         view.window!.layer.add(transition, forKey: kCATransition)
     }
+    
+    func animationfromLeft(){
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.type = CATransitionType.moveIn
+        transition.subtype = CATransitionSubtype.fromTop
+        transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.linear)
+        view.window!.layer.add(transition, forKey: kCATransition)
+    }
+    
     func playSound(soundName: String) {
         let url = Bundle.main.url(forResource: soundName, withExtension: "wav")
         bunyiHuruf = try! AVAudioPlayer(contentsOf: url!)
@@ -78,6 +88,7 @@ class AhurufViewController: UIViewController {
         maskot.addGestureRecognizer(gesture)
     }
     func mendengar(){
+        
         let gestureDengar =  UITapGestureRecognizer(target: self, action: #selector(hurufImageTapped))
         hurufImage.isUserInteractionEnabled = true
         gestureDengar.numberOfTapsRequired = 1
@@ -157,10 +168,10 @@ class AhurufViewController: UIViewController {
     @objc func backimageTapped(){
         
         animationfromRight()
-       playSound(soundName: "pilihlahHuruf")
+        playSound(soundName: "pilihlahHuruf")
         bantuanBoard.image = nil
+        animationfromLeft()
         dismiss(animated: true, completion: nil)
-        
     }
     
     @objc func hurufImageTapped(){
@@ -226,23 +237,27 @@ class AhurufViewController: UIViewController {
         nameBoard.image = #imageLiteral(resourceName: "mendengarBoard")
         playSound(soundName: "mendengarkan")
         bantuanBoard.image = nil
+        
+        prevActivity.isHidden = true
     }
     @objc func nextActivityTapped(){
         
         if(state == 0){
-        state = 1
-        nameBoard.image = #imageLiteral(resourceName: "mengucapBoard")
-        playSound(soundName: "mengucapkan")
-        prevActivity.image = #imageLiteral(resourceName: "arrow2")
-        bantuanBoard.image = nil
-        } else if (state == 1){let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
+            state = 1
+            prevActivity.isHidden = false
+            nameBoard.image = #imageLiteral(resourceName: "mengucapBoard")
+            playSound(soundName: "mengucapkan")
+            prevActivity.image = #imageLiteral(resourceName: "arrow2")
+            bantuanBoard.image = nil
+        } else if (state == 1){
+            let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
             let newViewController = storyBoard.instantiateViewController(withIdentifier: "MenulisA") as! MenulisAViewController
-            
+            animationfromRight()
             newViewController.modalPresentationStyle = .fullScreen
+            newViewController.huruf = huruf
             self.present(newViewController, animated: false, completion: nil)
         }
-            
-        }
+    }
     @objc func backgroundImageTapped(){
         bantuanBoard.image = nil
     }
@@ -252,20 +267,21 @@ class AhurufViewController: UIViewController {
             isMascotShow.toggle()
             if(isMascotShow) {
                 bantuanBoard.image = #imageLiteral(resourceName: "tekanGelembungDengar")
-            //    playSound(soundName: "")
+                //    playSound(soundName: "")
             }else{
                 bantuanBoard.image = nil
             }
-           
+            
         } else if(state == 1) {isMascotShow.toggle()
             if(isMascotShow) {
                 bantuanBoard.image = #imageLiteral(resourceName: "tekanGelembungUcapkan")
                 playSound(soundName: "intruksiUcap")
-        }
+            }
             else{
-            bantuanBoard.image = nil
+                bantuanBoard.image = nil
+            }
         }
+        
     }
     
-    }
 }

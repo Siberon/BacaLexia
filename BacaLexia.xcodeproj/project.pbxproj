@@ -38,6 +38,7 @@
 		CD7D9FD6254FD39B008FC254 /* BacaLexiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FD5254FD39B008FC254 /* BacaLexiaTests.swift */; };
 		CD7D9FE1254FD39B008FC254 /* BacaLexiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FE0254FD39B008FC254 /* BacaLexiaUITests.swift */; };
 		CDCE2CA92558F04A00851650 /* ShowGuide.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CDCE2CA82558F04A00851650 /* ShowGuide.m4a */; };
+		F67771AA255D6DA1000E7924 /* PilihVViewController+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67771A9255D6DA1000E7924 /* PilihVViewController+Extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		CD7D9FE0254FD39B008FC254 /* BacaLexiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacaLexiaUITests.swift; sourceTree = "<group>"; };
 		CD7D9FE2254FD39B008FC254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDCE2CA82558F04A00851650 /* ShowGuide.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShowGuide.m4a; sourceTree = "<group>"; };
+		F67771A9255D6DA1000E7924 /* PilihVViewController+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilihVViewController+Extention.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			children = (
 				70777BF625555C1900E78239 /* MainViewController.swift */,
 				7065FAF225532B09004ABF4A /* PilihVViewController.swift */,
+				F67771A9255D6DA1000E7924 /* PilihVViewController+Extention.swift */,
 				701986BD2559AF6A00DA938E /* PilihKonsViewController.swift */,
 				7065FAF725532B29004ABF4A /* AhurufViewController.swift */,
 				CD7844DE2552D01C00BCA0E5 /* MenulisAViewController.swift */,
@@ -385,6 +388,7 @@
 				7065FAF325532B09004ABF4A /* PilihVViewController.swift in Sources */,
 				CD7D9FBE254FD39A008FC254 /* SceneDelegate.swift in Sources */,
 				CD7844DF2552D01C00BCA0E5 /* MenulisAViewController.swift in Sources */,
+				F67771AA255D6DA1000E7924 /* PilihVViewController+Extention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +486,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -537,7 +541,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -553,7 +557,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XN642GJ9WQ;
+				DEVELOPMENT_TEAM = 52RX5R54N7;
 				INFOPLIST_FILE = BacaLexia/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -573,7 +577,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XN642GJ9WQ;
+				DEVELOPMENT_TEAM = 52RX5R54N7;
 				INFOPLIST_FILE = BacaLexia/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

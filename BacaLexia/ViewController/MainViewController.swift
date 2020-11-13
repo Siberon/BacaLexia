@@ -20,6 +20,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var vocalButton: UIImageView!
     @IBOutlet weak var konsonanButton: UIImageView!
     @IBOutlet weak var bantuanBoard: UIImageView!
+    var btn1 : UIView!
     
     @IBOutlet weak var maskot: UIButton!
     override func viewDidLoad() {
@@ -27,13 +28,17 @@ class MainViewController: UIViewController {
         
         bantuanDisplay()
         xButtonAction()
+        btn1 = UIView(frame: vocalButton.frame)
+        btn1.center = vocalButton.center
+        btn1.alpha = 0.1
         
+        animationBuble()
         
-      
         let gestureVocal =  UITapGestureRecognizer(target: self, action: #selector(imageVocalTapped))
-        vocalButton.isUserInteractionEnabled = true
+        btn1.isUserInteractionEnabled = true
         gestureVocal.numberOfTapsRequired = 1
-        vocalButton.addGestureRecognizer(gestureVocal)
+        btn1.addGestureRecognizer(gestureVocal)
+        view.addSubview(btn1)
         
         let gestureKonsonan =  UITapGestureRecognizer(target: self, action: #selector(imageKonsonanTapped))
         konsonanButton.isUserInteractionEnabled = true
@@ -42,6 +47,22 @@ class MainViewController: UIViewController {
         
     }
     
+    
+    func animationBuble(){
+        let a = CGFloat.random(in: 10...20)
+        let b = CGFloat.random(in: 10...20)
+        UIView.animate(withDuration: 2, delay: 0, options: [.curveLinear]) {
+            self.vocalButton.center.y = self.vocalButton.center.y + a
+            self.vocalButton.center.x = self.vocalButton.center.x + b
+        } completion: { (sucesss) in
+            UIView.animate(withDuration: 2, delay: 0, options: [.curveLinear]) {
+                self.vocalButton.center.y = self.vocalButton.center.y - a
+                self.vocalButton.center.x = self.vocalButton.center.x - b
+            } completion: { (sucesss) in
+                self.animationBuble()
+            }
+        }
+    }
     
     func animationfromRight(){
         let transition = CATransition()
@@ -119,15 +140,15 @@ class MainViewController: UIViewController {
    
     @objc func imageKonsonanTapped(){
         
-        playSoundFalse()
-        animationfromRight()
-     //   playSoundTrue()
-        
-        let storyBoard: UIStoryboard = UIStoryboard(name: "PilihKons", bundle: nil)
-        
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "PilihKonsViewController") as! PilihKonsViewController
-        newViewController.modalPresentationStyle = .fullScreen
-        self.present(newViewController, animated: false, completion: nil)
+//        playSoundFalse()
+//        animationfromRight()
+//     //   playSoundTrue()
+//
+//        let storyBoard: UIStoryboard = UIStoryboard(name: "PilihKons", bundle: nil)
+//
+//        let newViewController = storyBoard.instantiateViewController(withIdentifier: "PilihKonsViewController") as! PilihKonsViewController
+//        newViewController.modalPresentationStyle = .fullScreen
+//        self.present(newViewController, animated: false, completion: nil)
         }
     
     func backgroundTap(){
