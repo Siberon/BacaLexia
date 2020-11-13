@@ -63,22 +63,16 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
     }
     
     @objc func goToPrevActivity(){
-        animationfromRight()
-//        let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
-//
-//        let newViewController = storyBoard.instantiateViewController(withIdentifier: "AhurufViewController") as! AhurufViewController
-//        newViewController.huruf = huruf
-//        newViewController.state = 1
-//
-//        newViewController.nameBoard.image = #imageLiteral(resourceName: "mengucapBoard")
-//
-//        newViewController.prevActivity.image = #imageLiteral(resourceName: "arrow2")
-//        newViewController.bantuanBoard.image = nil
-//        playSound(soundName: "mengucapkan")
-//        newViewController.modalPresentationStyle = .fullScreen
-//            self.present(newViewController, animated: false, completion: nil)
-//
-        dismiss(animated: true, completion: nil)
+      let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
+        
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "AhurufViewController") as! AhurufViewController
+        newViewController.huruf = huruf
+        newViewController.state = 1
+        playSound(soundName: "mengucapkan")
+        newViewController.modalPresentationStyle = .fullScreen
+            self.present(newViewController, animated: false, completion: nil)
+        
+        
     }
     
     
@@ -98,8 +92,12 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
     }
     
     func backToPilihHuruf(){
-     
-        dismiss(animated: true, completion: nil)
+        let gesture =  UITapGestureRecognizer(target: self, action: #selector(backimageTapped))
+        backButton.isUserInteractionEnabled = true
+        gesture.numberOfTapsRequired = 1
+        backButton.addGestureRecognizer(gesture)
+      
+        //dismiss(animated: true, completion: nil)
         
     }
     

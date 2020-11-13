@@ -13,6 +13,7 @@ class MainViewController: UIViewController {
     var bunyiPopUp: AVAudioPlayer!
     var bunyiOne: AVAudioPlayer!
     var isMascotShow: Bool = false
+    var suara: AVAudioPlayer!
    
     @IBOutlet weak var xxButton: UIImageView!
     @IBOutlet weak var panduanMain: UIImageView!
@@ -40,10 +41,10 @@ class MainViewController: UIViewController {
         btn1.addGestureRecognizer(gestureVocal)
         view.addSubview(btn1)
         
-        let gestureKonsonan =  UITapGestureRecognizer(target: self, action: #selector(imageKonsonanTapped))
+/*        let gestureKonsonan =  UITapGestureRecognizer(target: self, action: #selector(imageKonsonanTapped))
         konsonanButton.isUserInteractionEnabled = true
         gestureKonsonan.numberOfTapsRequired = 1
-        konsonanButton.addGestureRecognizer(gestureKonsonan)
+        konsonanButton.addGestureRecognizer(gestureKonsonan) */
         
     }
     
@@ -80,7 +81,7 @@ class MainViewController: UIViewController {
         bunyiPopUp.play()  */
         
     func playSoundFalse() {
-            guard let url = Bundle.main.url(forResource: "A", withExtension: "wav") else { return }
+            guard let url = Bundle.main.url(forResource: "gelembung1", withExtension: "wav") else { return }
 
             do {
                 try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
@@ -174,6 +175,8 @@ class MainViewController: UIViewController {
         xxButton.addGestureRecognizer(gesture)
         
     }
+   
+ 
     @objc func xxButtonTapped(){
         
         panduanMain.image = nil
@@ -186,7 +189,8 @@ class MainViewController: UIViewController {
                 panduanMain.image = #imageLiteral(resourceName: "panduanMainMenu")
                 xxButton.image = #imageLiteral(resourceName: "xButton")
                 
-        //        playSound(soundName: "intruksiDengar")
+                
+     //   playSound(soundName: "intruksiDengar")
             }else{
                 bantuanBoard.image = nil
             }
