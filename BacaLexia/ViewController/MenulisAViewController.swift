@@ -40,24 +40,39 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
         ShowGuideSound()
         showguide()
         showCanvas()
+        
+        let gesture =  UITapGestureRecognizer(target: self, action: #selector(backimageTapped))
+        gesture.numberOfTapsRequired = 1
+        
+        backButton.isUserInteractionEnabled = true
+        backButton.addGestureRecognizer(gesture)
+        
     }
     
-    @objc func backToPrevActivity(){
-            let gesture =  UITapGestureRecognizer(target: self, action: #selector(goToPrevActivity))
-            backActivityButton.isUserInteractionEnabled = true
-            gesture.numberOfTapsRequired = 1
-            backActivityButton.addGestureRecognizer(gesture)
+    func backToPrevActivity(){
+        let gesture =  UITapGestureRecognizer(target: self, action: #selector(goToPrevActivity))
+        gesture.numberOfTapsRequired = 1
+        
+        backActivityButton.isUserInteractionEnabled = true
+
+        
+        backActivityButton.addGestureRecognizer(gesture)
+//        backButton.isUserInteractionEnabled = true
+//        backButton.addGestureRecognizer(gesture)
+//        dismiss(animated: true, completion: nil)
     }
     
     @objc func goToPrevActivity(){
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
+//      let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
         
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "AhurufViewController") as! AhurufViewController
-        newViewController.huruf = huruf
-        newViewController.state = 1
-        playSound(soundName: "mengucapkan")
-        newViewController.modalPresentationStyle = .fullScreen
-            self.present(newViewController, animated: false, completion: nil)
+//        let newViewController = storyBoard.instantiateViewController(withIdentifier: "AhurufViewController") as! AhurufViewController
+//        newViewController.huruf = huruf
+//        newViewController.state = 1
+//        playSound(soundName: "mengucapkan")
+//        newViewController.modalPresentationStyle = .fullScreen
+//            self.present(newViewController, animated: false, completion: nil)
+        dismiss(animated: true, completion: nil)
+        
     }
     
     
@@ -65,7 +80,7 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
         let transition = CATransition()
         transition.duration = 1.0
         transition.type = CATransitionType.fade
-        transition.subtype = CATransitionSubtype.fromRight
+        transition.subtype = CATransitionSubtype.fromLeft
         transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
         view.window!.layer.add(transition, forKey: kCATransition)
     }
@@ -81,20 +96,19 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
         backButton.isUserInteractionEnabled = true
         gesture.numberOfTapsRequired = 1
         backButton.addGestureRecognizer(gesture)
+      
+        //dismiss(animated: true, completion: nil)
+        
     }
     
     @objc func backimageTapped(){
-        
         animationfromRight()
-       playSound(soundName: "pilihlahHuruf")
-        
         let storyBoard: UIStoryboard = UIStoryboard(name: "PilihV", bundle: nil)
         
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "PilihVViewController") as! PilihVViewController
-       
-        newViewController.modalPresentationStyle = .fullScreen
-                self.present(newViewController, animated: false, completion: nil)
         
+        newViewController.modalPresentationStyle = .fullScreen
+        self.present(newViewController, animated: false, completion: nil)
     }
 
     func checkAlphabets() {
@@ -157,7 +171,7 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
         self.mCanvas.delegate = self
         self.mCanvas.backgroundColor = .clear
         self.mCanvas.isOpaque = false
-        self.mCanvas.tool = PKInkingTool(.marker,color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
+        self.mCanvas.tool = PKInkingTool(.marker, color: .black, width: 40)
         self.mCanvas.drawing = drawing
         self.mCanvas.alwaysBounceVertical = true
         if #available(iOS 14.0, *) {
