@@ -17,7 +17,7 @@ class AhurufViewController: UIViewController {
     
     var state: Int = 0
     
-   
+    
     @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var arrowButton: UIImageView!
     @IBOutlet weak var hurufImage: UIImageView!
@@ -37,7 +37,7 @@ class AhurufViewController: UIViewController {
         //updateView()
         nameBoard.image = #imageLiteral(resourceName: "mendengarBoard")
     }
-
+    
     func animationfromRight(){
         let transition = CATransition()
         transition.duration = 1.0
@@ -165,7 +165,7 @@ class AhurufViewController: UIViewController {
         }
         
     }
-
+    
     @objc func backimageTapped(){
         
         animationfromRight()
@@ -230,16 +230,17 @@ class AhurufViewController: UIViewController {
         }else if huruf == "Z"{
             playSound(soundName: "O")
         }
-     //   bantuanBoard.image = nil
+        //   bantuanBoard.image = nil
     }
-
+    
     @objc func prevActivityTapped(){
         state = 0; do {
-        nameBoard.image = #imageLiteral(resourceName: "mendengarBoard")
-        playSound(soundName: "mendengarkan")
-        bantuanBoard.image = nil
-        
-        prevActivity.isHidden = true
+            nameBoard.image = #imageLiteral(resourceName: "mendengarBoard")
+            playSound(soundName: "mendengarkan")
+            bantuanBoard.image = nil
+            
+            prevActivity.isHidden = true
+        }
     }
     @objc func nextActivityTapped(){
         
@@ -268,7 +269,7 @@ class AhurufViewController: UIViewController {
             isMascotShow.toggle()
             if(isMascotShow) {
                 bantuanBoard.image = #imageLiteral(resourceName: "tekanGelembungDengar")
-            playSound(soundName: "instruksiDengar")
+                playSound(soundName: "instruksiDengar")
             }else{
                 bantuanBoard.image = nil
             }
@@ -277,7 +278,7 @@ class AhurufViewController: UIViewController {
             if(isMascotShow) {
                 bantuanBoard.image = #imageLiteral(resourceName: "tekanGelembungUcapkan")
                 playSound(soundName: "instruksiUcap")
-        }
+            }
             else{
                 bantuanBoard.image = nil
             }
@@ -285,7 +286,5 @@ class AhurufViewController: UIViewController {
         
     }
     
-    }
-   
-    
 }
+

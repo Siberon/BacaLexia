@@ -10,9 +10,7 @@
 		701986BE2559AF6A00DA938E /* PilihKonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701986BD2559AF6A00DA938E /* PilihKonsViewController.swift */; };
 		703ECCD5255DD62D006AD24C /* instruksiDengar.wav in Resources */ = {isa = PBXBuildFile; fileRef = 703ECCCB255DD62D006AD24C /* instruksiDengar.wav */; };
 		703ECCD6255DD62D006AD24C /* instruksiUcap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 703ECCCC255DD62D006AD24C /* instruksiUcap.wav */; };
-		703ECCD7255DD62D006AD24C /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = 703ECCCD255DD62D006AD24C /* E.wav */; };
 		703ECCD9255DD62D006AD24C /* VnK.wav in Resources */ = {isa = PBXBuildFile; fileRef = 703ECCCF255DD62D006AD24C /* VnK.wav */; };
-		703ECCDB255DD62D006AD24C /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 703ECCD1255DD62D006AD24C /* A.wav */; };
 		703ECCDC255DD62D006AD24C /* U.wav in Resources */ = {isa = PBXBuildFile; fileRef = 703ECCD2255DD62D006AD24C /* U.wav */; };
 		703ECCDD255DD62D006AD24C /* O.wav in Resources */ = {isa = PBXBuildFile; fileRef = 703ECCD3255DD62D006AD24C /* O.wav */; };
 		703ECCDE255DD62D006AD24C /* I.wav in Resources */ = {isa = PBXBuildFile; fileRef = 703ECCD4255DD62D006AD24C /* I.wav */; };
@@ -68,9 +66,7 @@
 		701986BD2559AF6A00DA938E /* PilihKonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihKonsViewController.swift; sourceTree = "<group>"; };
 		703ECCCB255DD62D006AD24C /* instruksiDengar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = instruksiDengar.wav; sourceTree = "<group>"; };
 		703ECCCC255DD62D006AD24C /* instruksiUcap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = instruksiUcap.wav; sourceTree = "<group>"; };
-		703ECCCD255DD62D006AD24C /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = E.wav; path = ../../../../E.wav; sourceTree = "<group>"; };
 		703ECCCF255DD62D006AD24C /* VnK.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = VnK.wav; sourceTree = "<group>"; };
-		703ECCD1255DD62D006AD24C /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = A.wav; path = ../../../../A.wav; sourceTree = "<group>"; };
 		703ECCD2255DD62D006AD24C /* U.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = U.wav; sourceTree = "<group>"; };
 		703ECCD3255DD62D006AD24C /* O.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = O.wav; sourceTree = "<group>"; };
 		703ECCD4255DD62D006AD24C /* I.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = I.wav; sourceTree = "<group>"; };
@@ -146,8 +142,6 @@
 				70777BE42555225E00E78239 /* Dengar2.wav */,
 				703ECD01255DEB9A006AD24C /* instruksiPilihHuruf.wav */,
 				70777BE22555225E00E78239 /* Dengar3.wav */,
-				703ECCD1255DD62D006AD24C /* A.wav */,
-				703ECCCD255DD62D006AD24C /* E.wav */,
 				703ECD0B255DEC93006AD24C /* gelembung1.wav */,
 				703ECCD4255DD62D006AD24C /* I.wav */,
 				703ECCCB255DD62D006AD24C /* instruksiDengar.wav */,
@@ -355,7 +349,6 @@
 			files = (
 				703ECD0C255DEC93006AD24C /* gelembung1.wav in Resources */,
 				703ECCDD255DD62D006AD24C /* O.wav in Resources */,
-				703ECCD7255DD62D006AD24C /* E.wav in Resources */,
 				703ECCD5255DD62D006AD24C /* instruksiDengar.wav in Resources */,
 				703ECCF2255DE9B2006AD24C /* instruksiPilihVnK.wav in Resources */,
 				703ECD02255DEB9A006AD24C /* instruksiPilihHuruf.wav in Resources */,
@@ -369,7 +362,6 @@
 				703ECD07255DEC5B006AD24C /* isntruksiPilihVnK.wav in Resources */,
 				703ECCF7255DE9BF006AD24C /* gelembung.wav in Resources */,
 				70777BE72555225E00E78239 /* Dengar2.wav in Resources */,
-				703ECCDB255DD62D006AD24C /* A.wav in Resources */,
 				70776F2D255936D400345E04 /* PilihKons.storyboard in Resources */,
 				CD7D9FCB254FD39B008FC254 /* LaunchScreen.storyboard in Resources */,
 				CD7D9FC8254FD39B008FC254 /* Assets.xcassets in Resources */,
