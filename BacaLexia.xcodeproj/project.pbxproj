@@ -42,6 +42,8 @@
 		CD7D9FD6254FD39B008FC254 /* BacaLexiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FD5254FD39B008FC254 /* BacaLexiaTests.swift */; };
 		CD7D9FE1254FD39B008FC254 /* BacaLexiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D9FE0254FD39B008FC254 /* BacaLexiaUITests.swift */; };
 		CDCE2CA92558F04A00851650 /* ShowGuide.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CDCE2CA82558F04A00851650 /* ShowGuide.m4a */; };
+		F61B0A3C255E5BA00056A8AA /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = F61B0A3A255E5BA00056A8AA /* A.wav */; };
+		F61B0A3D255E5BA00056A8AA /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = F61B0A3B255E5BA00056A8AA /* E.wav */; };
 		F67771AA255D6DA1000E7924 /* PilihVViewController+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67771A9255D6DA1000E7924 /* PilihVViewController+Extention.swift */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +106,8 @@
 		CD7D9FE0254FD39B008FC254 /* BacaLexiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacaLexiaUITests.swift; sourceTree = "<group>"; };
 		CD7D9FE2254FD39B008FC254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDCE2CA82558F04A00851650 /* ShowGuide.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShowGuide.m4a; sourceTree = "<group>"; };
+		F61B0A3A255E5BA00056A8AA /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
+		F61B0A3B255E5BA00056A8AA /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
 		F67771A9255D6DA1000E7924 /* PilihVViewController+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilihVViewController+Extention.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +139,8 @@
 		70777BC42554B4EE00E78239 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
+				F61B0A3A255E5BA00056A8AA /* A.wav */,
+				F61B0A3B255E5BA00056A8AA /* E.wav */,
 				70776F122558A7BA00345E04 /* pilihlahHuruf.wav */,
 				70776F072558A67700345E04 /* mendengarkan.wav */,
 				70776F082558A67700345E04 /* mengucapkan.wav */,
@@ -353,6 +359,7 @@
 				703ECCF2255DE9B2006AD24C /* instruksiPilihVnK.wav in Resources */,
 				703ECD02255DEB9A006AD24C /* instruksiPilihHuruf.wav in Resources */,
 				CD7844DA2552C0F200BCA0E5 /* MenulisA.storyboard in Resources */,
+				F61B0A3D255E5BA00056A8AA /* E.wav in Resources */,
 				CDCE2CA92558F04A00851650 /* ShowGuide.m4a in Resources */,
 				70776F0C2558A67700345E04 /* mengucapkan.wav in Resources */,
 				70777BE52555225E00E78239 /* Dengar3.wav in Resources */,
@@ -363,6 +370,7 @@
 				703ECCF7255DE9BF006AD24C /* gelembung.wav in Resources */,
 				70777BE72555225E00E78239 /* Dengar2.wav in Resources */,
 				70776F2D255936D400345E04 /* PilihKons.storyboard in Resources */,
+				F61B0A3C255E5BA00056A8AA /* A.wav in Resources */,
 				CD7D9FCB254FD39B008FC254 /* LaunchScreen.storyboard in Resources */,
 				CD7D9FC8254FD39B008FC254 /* Assets.xcassets in Resources */,
 				703ECCD9255DD62D006AD24C /* VnK.wav in Resources */,

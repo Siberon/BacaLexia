@@ -21,7 +21,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var vocalButton: UIImageView!
     @IBOutlet weak var konsonanButton: UIImageView!
     @IBOutlet weak var bantuanBoard: UIImageView!
-    var btn1 : UIView!
+    
     
     @IBOutlet weak var maskot: UIButton!
     override func viewDidLoad() {
@@ -29,6 +29,8 @@ class MainViewController: UIViewController {
         
         bantuanDisplay()
         xButtonAction()
+        
+        var btn1 : UIView!
         btn1 = UIView(frame: vocalButton.frame)
         btn1.center = vocalButton.center
         btn1.alpha = 0.1

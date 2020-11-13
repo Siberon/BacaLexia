@@ -63,15 +63,15 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
     }
     
     @objc func goToPrevActivity(){
-      let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
+//      let storyBoard: UIStoryboard = UIStoryboard(name: "Ahuruf", bundle: nil)
         
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "AhurufViewController") as! AhurufViewController
-        newViewController.huruf = huruf
-        newViewController.state = 1
-        playSound(soundName: "mengucapkan")
-        newViewController.modalPresentationStyle = .fullScreen
-            self.present(newViewController, animated: false, completion: nil)
-        
+//        let newViewController = storyBoard.instantiateViewController(withIdentifier: "AhurufViewController") as! AhurufViewController
+//        newViewController.huruf = huruf
+//        newViewController.state = 1
+//        playSound(soundName: "mengucapkan")
+//        newViewController.modalPresentationStyle = .fullScreen
+//            self.present(newViewController, animated: false, completion: nil)
+        dismiss(animated: true, completion: nil)
         
     }
     

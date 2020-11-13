@@ -51,7 +51,7 @@ class AhurufViewController: UIViewController {
         let transition = CATransition()
         transition.duration = 0.5
         transition.type = CATransitionType.moveIn
-        transition.subtype = CATransitionSubtype.fromTop
+        transition.subtype = CATransitionSubtype.fromLeft
         transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.linear)
         view.window!.layer.add(transition, forKey: kCATransition)
     }
@@ -167,12 +167,11 @@ class AhurufViewController: UIViewController {
     }
     
     @objc func backimageTapped(){
-        
-        animationfromRight()
-        playSound(soundName: "pilihlahHuruf")
-        bantuanBoard.image = nil
+        let storyBoard: UIStoryboard = UIStoryboard(name: "PilihV", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "PilihVViewController") as! PilihVViewController
         animationfromLeft()
-        dismiss(animated: true, completion: nil)
+        newViewController.modalPresentationStyle = .fullScreen
+        self.present(newViewController, animated: false, completion: nil)
     }
     
     @objc func hurufImageTapped(){
