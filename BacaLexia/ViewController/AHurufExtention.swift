@@ -50,6 +50,13 @@ extension AhurufViewController{
         }
         
         // Prepare recognition task
+        let audioSession = AVAudioSession.sharedInstance()
+        do{
+            try audioSession.setCategory(.record)
+        }catch{
+            print(error)
+        }
+        
         recognizer.recognitionTask(with: request) { (result, error) in
             if let result = result {
                 self.engine.stop()

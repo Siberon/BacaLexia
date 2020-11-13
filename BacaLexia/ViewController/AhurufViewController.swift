@@ -56,7 +56,7 @@ class AhurufViewController: UIViewController {
     func animationfromLeft(){
         let transition = CATransition()
         transition.duration = 0.5
-        transition.type = CATransitionType.moveIn
+        transition.type = CATransitionType.fade
         transition.subtype = CATransitionSubtype.fromLeft
         transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.linear)
         view.window!.layer.add(transition, forKey: kCATransition)
