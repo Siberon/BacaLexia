@@ -11,28 +11,9 @@ import Speech
 import AVFoundation
 
 extension AhurufViewController{
-    func requestTranscribePermissions() {
-        
-//        SFSpeechRecognizer.requestAuthorization { authStatus in
-//            DispatchQueue.main.async {
-//                if authStatus == .authorized {
-//                    let locale = NSLocale(localeIdentifier: "fr_FR")
-//                    let sf = SFSpeechRecognizer(locale: locale as Locale)
-//                    self.speechRequest = SFSpeechAudioBufferRecognitionRequest()
-//                    sf?.recognitionTask(with: self.speechRequest!, delegate: self)
-//
-//                } else {
-//                    print("Transcription permission was declined.")
-//                }
-//            }
-//        }
-    }
-    
+ 
     private func requestPermissions() {
-        //
-        // Do not forget to add `NSMicrophoneUsageDescription` and `NSSpeechRecognitionUsageDescription` to `Info.plist`
-        //
-        
+     
         // Request recording permission
         AVAudioSession.sharedInstance().requestRecordPermission { allowed in
             if allowed {
@@ -67,8 +48,15 @@ extension AhurufViewController{
             print("SFSpeechRecognizer not supported.")
             return
         }
-
+        
         // Prepare recognition task
+        let audioSession = AVAudioSession.sharedInstance()
+        do{
+            try audioSession.setCategory(.record)
+        }catch{
+            print(error)
+        }
+        
         recognizer.recognitionTask(with: request) { (result, error) in
             if let result = result {
                 self.engine.stop()
@@ -76,8 +64,11 @@ extension AhurufViewController{
                 self.stringListen = result.bestTranscription.formattedString
                 print(self.stringListen[0])
                 if self.stringListen[0] == self.huruf{
-                    
+                    //kalau benar
                     self.benar()
+                }else{
+                    //kalau salah
+                    self.salah()
                 }
                 
             } else {
@@ -110,15 +101,39 @@ extension AhurufViewController{
         selamat.frame = self.hurufImage.frame
         selamat.center = self.hurufImage.center
         selamat.frame.size = CGSize(width: 0, height: 0)
-        selamat.text = "BENAAR!!!!"
+        
         selamat.textColor = .black
-        selamat.font = UIFont.systemFont(ofSize: 1000)
+        selamat.font = UIFont.systemFont(ofSize: 200)
+        selamat.text = "🎉"
         selamat.textAlignment = .center
         self.view.addSubview(selamat)
         UIView.animate(withDuration: 2) {
-            selamat.frame.size = CGSize(width: 500, height: 500)
-            selamat.font = UIFont(name: .init(), size: 800)
+            selamat.frame.size = CGSize(width: self.view.frame.size.width / 3, height: self.view.frame.size.height/3)
             selamat.center = self.hurufImage.center
+            self.hurufImage.alpha = 0
+        } completion: { (done) in
+            
+        }
+    }
+    
+    func salah(){
+        print("Salaaah")
+        
+        let selamat = UILabel()
+        selamat.frame = self.hurufImage.frame
+//        selamat.center = self.hurufImage.center
+//        selamat.frame.size = CGSize(width: 0, height: 0)
+        selamat.frame.size = CGSize(width: self.view.frame.size.width , height: self.view.frame.size.height/3)
+        selamat.center = self.hurufImage.center
+        selamat.alpha = 0
+        selamat.textColor = .black
+        selamat.font = UIFont.systemFont(ofSize: 80)
+        selamat.text = "Ayoo coba lagi"
+        selamat.textAlignment = .center
+        self.view.addSubview(selamat)
+        UIView.animate(withDuration: 2) {
+            selamat.alpha = 1
+            
             self.hurufImage.alpha = 0
         } completion: { (done) in
             
