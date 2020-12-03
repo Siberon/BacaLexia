@@ -171,7 +171,7 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
         self.mCanvas.delegate = self
         self.mCanvas.backgroundColor = .clear
         self.mCanvas.isOpaque = false
-        self.mCanvas.tool = PKInkingTool(.marker, color: .black, width: 40)
+        self.mCanvas.tool = PKInkingTool(.marker, color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), width: 40)
         self.mCanvas.drawing = drawing
         self.mCanvas.alwaysBounceVertical = true
         if #available(iOS 14.0, *) {

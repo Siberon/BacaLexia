@@ -56,7 +56,8 @@ extension AhurufViewController{
         }catch{
             print(error)
         }
-        
+        engine.stop()
+        engine.inputNode.removeTap(onBus: 0)
         recognizer.recognitionTask(with: request) { (result, error) in
             if let result = result {
                 self.engine.stop()
@@ -96,8 +97,10 @@ extension AhurufViewController{
     
     func benar(){
         print("Correct!!!")
+        engine.stop()
+        engine.inputNode.removeTap(onBus: 0)
         
-        let selamat = UILabel()
+        selamat = UILabel()
         selamat.frame = self.hurufImage.frame
         selamat.center = self.hurufImage.center
         selamat.frame.size = CGSize(width: 0, height: 0)
@@ -106,10 +109,10 @@ extension AhurufViewController{
         selamat.font = UIFont.systemFont(ofSize: 200)
         selamat.text = "🎉"
         selamat.textAlignment = .center
-        self.view.addSubview(selamat)
+        view.addSubview(selamat)
         UIView.animate(withDuration: 2) {
-            selamat.frame.size = CGSize(width: self.view.frame.size.width / 3, height: self.view.frame.size.height/3)
-            selamat.center = self.hurufImage.center
+            self.selamat.frame.size = CGSize(width: self.view.frame.size.width / 3, height: self.view.frame.size.height/3)
+            self.selamat.center = self.hurufImage.center
             self.hurufImage.alpha = 0
         } completion: { (done) in
             
@@ -118,7 +121,8 @@ extension AhurufViewController{
     
     func salah(){
         print("Salaaah")
-        
+        engine.stop()
+        engine.inputNode.removeTap(onBus: 0)
         let selamat = UILabel()
         selamat.frame = self.hurufImage.frame
 //        selamat.center = self.hurufImage.center

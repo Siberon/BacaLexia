@@ -20,6 +20,7 @@ class AhurufViewController: UIViewController {
     var recognizer = SFSpeechRecognizer()
     var request = SFSpeechAudioBufferRecognitionRequest()
     let engine = AVAudioEngine()
+    var selamat = UILabel()
     
     var state: Int = 0
     
@@ -32,6 +33,7 @@ class AhurufViewController: UIViewController {
     @IBOutlet weak var nextActivity: UIImageView!
     @IBOutlet weak var prevActivity: UIImageView!
     @IBOutlet weak var maskot: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         backToPilihHuruf()
@@ -74,6 +76,7 @@ class AhurufViewController: UIViewController {
         gesture.numberOfTapsRequired = 1
         arrowButton.addGestureRecognizer(gesture)
     }
+    
     func goToNextActivity(){
         goToPrevActivity()
         let gesture =  UITapGestureRecognizer(target: self, action: #selector(nextActivityTapped))
@@ -246,22 +249,27 @@ class AhurufViewController: UIViewController {
     }
     
     @objc func prevActivityTapped(){
-        state = 0; do {
-            nameBoard.image = #imageLiteral(resourceName: "mendengarBoard")
-            playSound(soundName: "mendengarkan")
-            bantuanBoard.image = nil
-            
-            prevActivity.isHidden = true
-        }
+        state = 0
+        nameBoard.image = #imageLiteral(resourceName: "mendengarBoard")
+        playSound(soundName: "mendengarkan")
+        bantuanBoard.image = nil
+        prevActivity.isHidden = true
+        self.hurufImage.alpha = 1
+        selamat.isHidden = true
+        selamat.alpha = 0
+        view.willRemoveSubview(selamat)
+        selamat.removeFromSuperview()
+        
     }
+    
     @objc func nextActivityTapped(){
         
         if(state == 0){
             state = 1
-            prevActivity.isHidden = false
+//            prevActivity.isHidden = false
             nameBoard.image = #imageLiteral(resourceName: "mengucapBoard")
             playSound(soundName: "mengucapkan")
-            prevActivity.image = #imageLiteral(resourceName: "arrow2")
+//            prevActivity.image = #imageLiteral(resourceName: "arrow2")
             bantuanBoard.image = nil
             mendengar()
         } else if (state == 1){

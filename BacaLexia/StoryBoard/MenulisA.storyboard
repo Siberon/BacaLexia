@@ -22,7 +22,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" id="GSC-0F-Rqa">
-                                <rect key="frame" x="254" y="-97" width="679" height="255"/>
+                                <rect key="frame" x="254" y="-97" width="678" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 6boardbesar" id="tUn-22-AZB">
@@ -34,20 +34,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 10Koala" id="Q29-2C-5DK">
-                                <rect key="frame" x="848" y="634" width="416" height="256"/>
+                                <rect key="frame" x="847" y="634" width="417" height="256"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="3vV-B1-4Ff" appends="YES" id="Udt-7y-csF"/>
                                 </connections>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qfZ-QN-39R" customClass="PKCanvasView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfZ-QN-39R" customClass="PKCanvasView">
                                 <rect key="frame" x="443" y="184" width="306" height="341"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="menulis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksS-MO-Qv4">
-                                <rect key="frame" x="268" y="34" width="655" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="menulis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksS-MO-Qv4">
+                                <rect key="frame" x="269" y="34" width="654" height="102"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="88"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
@@ -56,7 +54,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Text Box Menulis" id="W33-a1-9Ed">
-                                        <rect key="frame" x="0.0" y="0.0" width="835" height="323"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="834" height="323"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                     </imageView>
                                 </subviews>
@@ -68,13 +66,23 @@
                                 <rect key="frame" x="29" y="392" width="82" height="82"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow3" translatesAutoresizingMaskIntoConstraints="NO" id="v7i-KA-RRk">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow3" translatesAutoresizingMaskIntoConstraints="NO" id="v7i-KA-RRk">
                                 <rect key="frame" x="29" y="34" width="110" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eYH-Na-woM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qfZ-QN-39R" firstAttribute="leading" secondItem="OpL-ms-Y4A" secondAttribute="leading" id="8vb-la-oWN"/>
+                            <constraint firstItem="ksS-MO-Qv4" firstAttribute="top" secondItem="v7i-KA-RRk" secondAttribute="top" id="Cm2-3f-XMA"/>
+                            <constraint firstItem="ksS-MO-Qv4" firstAttribute="top" secondItem="eYH-Na-woM" secondAttribute="top" constant="34" id="EZK-qK-AwQ"/>
+                            <constraint firstItem="qfZ-QN-39R" firstAttribute="bottom" secondItem="OpL-ms-Y4A" secondAttribute="bottom" id="Rae-aX-k0G"/>
+                            <constraint firstItem="v7i-KA-RRk" firstAttribute="leading" secondItem="iBd-f8-xTc" secondAttribute="leading" id="YBb-nB-iQJ"/>
+                            <constraint firstItem="qfZ-QN-39R" firstAttribute="trailing" secondItem="OpL-ms-Y4A" secondAttribute="trailing" id="ZiY-WE-Tfk"/>
+                            <constraint firstItem="qfZ-QN-39R" firstAttribute="top" secondItem="OpL-ms-Y4A" secondAttribute="top" id="evC-gr-APQ"/>
+                            <constraint firstItem="qfZ-QN-39R" firstAttribute="centerX" secondItem="ksS-MO-Qv4" secondAttribute="centerX" id="fwY-Ok-rlt"/>
+                            <constraint firstItem="eYH-Na-woM" firstAttribute="trailing" secondItem="ksS-MO-Qv4" secondAttribute="trailing" constant="271" id="lLe-FN-3oL"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="KoalaBtn" destination="Q29-2C-5DK" id="YCu-Gk-RNz"/>
