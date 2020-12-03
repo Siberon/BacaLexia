@@ -1,8 +1,22 @@
 {
   "images" : [
     {
-      "filename" : "arrow3.pdf",
       "idiom" : "universal"
+    },
+    {
+      "filename" : "Back Button Copy.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Back Button Copy@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Back Button Copy@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

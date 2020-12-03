@@ -28,11 +28,10 @@ class AhurufViewController: UIViewController {
     @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var arrowButton: UIImageView!
     @IBOutlet weak var hurufImage: UIImageView!
-    @IBOutlet weak var bantuanBoard: UIImageView!
+    
     @IBOutlet weak var nameBoard: UIImageView!
     @IBOutlet weak var nextActivity: UIImageView!
-    @IBOutlet weak var prevActivity: UIImageView!
-    @IBOutlet weak var maskot: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +42,8 @@ class AhurufViewController: UIViewController {
         bantuanDisplay()
         backgroundTap()
         //updateView()
+      
+        
         nameBoard.image = #imageLiteral(resourceName: "mendengarBoard")
     }
     
@@ -86,16 +87,16 @@ class AhurufViewController: UIViewController {
     }
     func goToPrevActivity(){
         
-        let gesture =  UITapGestureRecognizer(target: self, action: #selector(prevActivityTapped))
-        prevActivity.isUserInteractionEnabled = true
-        gesture.numberOfTapsRequired = 1
-        prevActivity.addGestureRecognizer(gesture)
+//        let gesture =  UITapGestureRecognizer(target: self, action: #selector(prevActivityTapped))
+//        prevActivity.isUserInteractionEnabled = true
+//        gesture.numberOfTapsRequired = 1
+//        prevActivity.addGestureRecognizer(gesture)
     }
     func bantuanDisplay(){
-        let gesture =  UITapGestureRecognizer(target: self, action: #selector(maskotTapped))
-        maskot.isUserInteractionEnabled = true
-        gesture.numberOfTapsRequired = 1
-        maskot.addGestureRecognizer(gesture)
+//        let gesture =  UITapGestureRecognizer(target: self, action: #selector(maskotTapped))
+//        maskot.isUserInteractionEnabled = true
+//        gesture.numberOfTapsRequired = 1
+//        maskot.addGestureRecognizer(gesture)
     }
     func mendengar(){
         
@@ -249,16 +250,16 @@ class AhurufViewController: UIViewController {
     }
     
     @objc func prevActivityTapped(){
-        state = 0
-        nameBoard.image = #imageLiteral(resourceName: "mendengarBoard")
-        playSound(soundName: "mendengarkan")
-        bantuanBoard.image = nil
-        prevActivity.isHidden = true
-        self.hurufImage.alpha = 1
-        selamat.isHidden = true
-        selamat.alpha = 0
-        view.willRemoveSubview(selamat)
-        selamat.removeFromSuperview()
+//        state = 0
+//        nameBoard.image = #imageLiteral(resourceName: "mendengarBoard")
+//        playSound(soundName: "mendengarkan")
+//        bantuanBoard.image = nil
+//        prevActivity.isHidden = true
+//        self.hurufImage.alpha = 1
+//        selamat.isHidden = true
+//        selamat.alpha = 0
+//        view.willRemoveSubview(selamat)
+//        selamat.removeFromSuperview()
         
     }
     
@@ -270,7 +271,7 @@ class AhurufViewController: UIViewController {
             nameBoard.image = #imageLiteral(resourceName: "mengucapBoard")
             playSound(soundName: "mengucapkan")
 //            prevActivity.image = #imageLiteral(resourceName: "arrow2")
-            bantuanBoard.image = nil
+//            bantuanBoard.image = nil
             mendengar()
         } else if (state == 1){
             let storyBoard: UIStoryboard = UIStoryboard(name: "MenulisA", bundle: nil)
@@ -282,30 +283,30 @@ class AhurufViewController: UIViewController {
         }
     }
     @objc func backgroundImageTapped(){
-        bantuanBoard.image = nil
+        
     }
     
     @objc func maskotTapped(){
         if(state == 0){
             isMascotShow.toggle()
             if(isMascotShow) {
-                bantuanBoard.image = #imageLiteral(resourceName: "tekanGelembungDengar")
+//                bantuanBoard.image = #imageLiteral(resourceName: "tekanGelembungDengar")
                 playSound(soundName: "instruksiDengar")
             }else{
-                bantuanBoard.image = nil
+//                bantuanBoard.image = nil
             }
             
         } else if(state == 1) {isMascotShow.toggle()
             if(isMascotShow) {
-                bantuanBoard.image = #imageLiteral(resourceName: "tekanGelembungUcapkan")
+//                bantuanBoard.image = #imageLiteral(resourceName: "tekanGelembungUcapkan")
                 playSound(soundName: "instruksiUcap")
             }
             else{
-                bantuanBoard.image = nil
+//                bantuanBoard.image = nil
             }
         }
         
     }
-    
+
 }
 

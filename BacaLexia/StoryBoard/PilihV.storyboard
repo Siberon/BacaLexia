@@ -17,9 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background " translatesAutoresizingMaskIntoConstraints="NO" id="XPr-iK-HTo" userLabel="background">
-                                <rect key="frame" x="-77" y="-115" width="1454" height="1379"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background " translatesAutoresizingMaskIntoConstraints="NO" id="XPr-iK-HTo" userLabel="background">
+                                <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a" translatesAutoresizingMaskIntoConstraints="NO" id="uhw-61-OzB" userLabel="A">
                                 <rect key="frame" x="117" y="111" width="200" height="200"/>
@@ -63,32 +62,20 @@
                                     <constraint firstAttribute="height" constant="96" id="t2f-rL-9UZ"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iA-gD-eGy">
-                                <rect key="frame" x="794" y="593" width="468" height="229"/>
-                                <state key="normal" title="Button" image="koala"/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BDc-TH-E31">
-                                <rect key="frame" x="0.0" y="634" width="1194" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="koalaPapan" translatesAutoresizingMaskIntoConstraints="NO" id="ZGf-zy-olI" userLabel="maskot">
-                                <rect key="frame" x="801" y="546" width="416" height="256"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="c2d-oT-ipg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="9iA-gD-eGy" firstAttribute="top" secondItem="nx5-Xr-S19" secondAttribute="bottom" constant="91" id="2XX-Ky-BUs"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9iA-gD-eGy" secondAttribute="trailing" constant="-88" id="6oB-eT-7cp"/>
-                            <constraint firstItem="9iA-gD-eGy" firstAttribute="leading" secondItem="vlH-Sk-4Hf" secondAttribute="trailing" constant="126" id="7oj-bu-kHZ"/>
+                            <constraint firstItem="XPr-iK-HTo" firstAttribute="leading" secondItem="2ZN-7M-Vjo" secondAttribute="leading" id="097-Tv-fO9"/>
                             <constraint firstItem="2ZN-7M-Vjo" firstAttribute="leading" secondItem="c2d-oT-ipg" secondAttribute="leading" id="AH0-rm-vWJ"/>
                             <constraint firstItem="nx5-Xr-S19" firstAttribute="top" secondItem="c2d-oT-ipg" secondAttribute="top" constant="302" id="DOF-Of-C53"/>
                             <constraint firstItem="uhw-61-OzB" firstAttribute="top" secondItem="c2d-oT-ipg" secondAttribute="top" constant="111" id="LDR-WZ-NSQ"/>
                             <constraint firstItem="uau-gV-GRY" firstAttribute="top" secondItem="uhw-61-OzB" secondAttribute="bottom" constant="135" id="T1i-nD-gMO"/>
                             <constraint firstItem="uhw-61-OzB" firstAttribute="leading" secondItem="c2d-oT-ipg" secondAttribute="leading" constant="117" id="U2s-g8-xe0"/>
+                            <constraint firstItem="c2d-oT-ipg" firstAttribute="trailing" secondItem="vlH-Sk-4Hf" secondAttribute="trailing" constant="526" id="Wj7-Ak-rTj"/>
                             <constraint firstItem="c2d-oT-ipg" firstAttribute="bottom" secondItem="vlH-Sk-4Hf" secondAttribute="bottom" constant="99" id="a5t-HX-Lb3"/>
                             <constraint firstItem="c2d-oT-ipg" firstAttribute="trailing" secondItem="nx5-Xr-S19" secondAttribute="trailing" constant="307" id="gcS-o8-Ych"/>
+                            <constraint firstItem="XPr-iK-HTo" firstAttribute="top" secondItem="a9i-JQ-ABd" secondAttribute="top" id="ggI-Yq-DLz"/>
                             <constraint firstItem="ktM-wt-O0e" firstAttribute="leading" secondItem="uhw-61-OzB" secondAttribute="trailing" constant="80" id="l2y-Gq-AXw"/>
                             <constraint firstItem="2ZN-7M-Vjo" firstAttribute="top" secondItem="c2d-oT-ipg" secondAttribute="top" constant="20" id="rAS-OE-8vT"/>
                             <constraint firstItem="uau-gV-GRY" firstAttribute="leading" secondItem="c2d-oT-ipg" secondAttribute="leading" constant="144" id="uVm-cp-heu"/>
@@ -99,10 +86,8 @@
                         <outlet property="aButton" destination="uhw-61-OzB" id="3Xu-9B-8ug"/>
                         <outlet property="arrowButton" destination="2ZN-7M-Vjo" id="Xrx-ar-w4P"/>
                         <outlet property="background" destination="XPr-iK-HTo" id="kCW-QN-tKp"/>
-                        <outlet property="bantuanBoard" destination="BDc-TH-E31" id="hrg-uO-pPs"/>
                         <outlet property="eButton" destination="nx5-Xr-S19" id="bmO-30-oHV"/>
                         <outlet property="iButton" destination="ktM-wt-O0e" id="kiI-6Q-sDR"/>
-                        <outlet property="maskot" destination="9iA-gD-eGy" id="Nhy-Mf-bcm"/>
                         <outlet property="oButton" destination="vlH-Sk-4Hf" id="STE-oz-OGj"/>
                         <outlet property="uButton" destination="uau-gV-GRY" id="kAJ-iB-ax8"/>
                     </connections>
@@ -113,15 +98,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background " width="1454" height="1379"/>
-        <image name="a" width="2336" height="2326"/>
+        <image name="Background " width="1194" height="834"/>
+        <image name="a" width="400" height="399"/>
         <image name="arrow3" width="110" height="110"/>
-        <image name="e" width="2326" height="2326"/>
-        <image name="i" width="2326" height="2326"/>
-        <image name="koala" width="414" height="229"/>
-        <image name="koalaPapan" width="128" height="128"/>
-        <image name="o" width="2326" height="2326"/>
-        <image name="u" width="2326" height="2326"/>
+        <image name="e" width="400" height="400"/>
+        <image name="i" width="200" height="200"/>
+        <image name="o" width="400" height="400"/>
+        <image name="u" width="200" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

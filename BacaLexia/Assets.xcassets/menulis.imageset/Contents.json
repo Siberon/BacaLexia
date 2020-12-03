@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "menulis.png",
+      "filename" : "Menulis Papan.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "menulis@2x.png",
+      "filename" : "Menulis Papan@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "menulis@3x.png",
+      "filename" : "Menulis Papan@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

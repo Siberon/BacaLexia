@@ -13,11 +13,9 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
     
 
     @IBOutlet weak var mCanvas: PKCanvasView!
-    @IBOutlet weak var TextBantuan: UIImageView!
-    @IBOutlet weak var KoalaBtn: UIImageView!
     @IBOutlet weak var hurufImage: UIImageView!
     @IBOutlet weak var backButton: UIImageView!
-    @IBOutlet weak var backActivityButton: UIImageView!
+    
     
     var audioPlayer = AVAudioPlayer()
     
@@ -53,10 +51,10 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
         let gesture =  UITapGestureRecognizer(target: self, action: #selector(goToPrevActivity))
         gesture.numberOfTapsRequired = 1
         
-        backActivityButton.isUserInteractionEnabled = true
+//        backActivityButton.isUserInteractionEnabled = true
 
         
-        backActivityButton.addGestureRecognizer(gesture)
+//        backActivityButton.addGestureRecognizer(gesture)
 //        backButton.isUserInteractionEnabled = true
 //        backButton.addGestureRecognizer(gesture)
 //        dismiss(animated: true, completion: nil)
@@ -139,8 +137,8 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
     
     func showguide(){
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
-        KoalaBtn.isUserInteractionEnabled = true
-        KoalaBtn.addGestureRecognizer(tapGestureRecognizer)
+//        KoalaBtn.isUserInteractionEnabled = true
+//        KoalaBtn.addGestureRecognizer(tapGestureRecognizer)
         tapGestureRecognizer.numberOfTapsRequired = 1
         }
     
@@ -149,16 +147,16 @@ class MenulisAViewController: UIViewController,PKCanvasViewDelegate,PKToolPicker
         // let tappedImage = tapGestureRecognizer.view as! UIImageView
         // Your action
         
-                if TextBantuan.isHidden == true {
-                    
-                    TextBantuan.isHidden = false
-                    audioPlayer.play()
-                    
-                } else {
-                
-                    TextBantuan.isHidden = true
-                    
-                }
+//                if TextBantuan.isHidden == true {
+//
+//                    TextBantuan.isHidden = false
+//                    audioPlayer.play()
+//
+//                } else {
+//
+//                    TextBantuan.isHidden = true
+//
+//                }
     }
     
     

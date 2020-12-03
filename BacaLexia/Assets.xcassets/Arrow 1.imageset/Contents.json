@@ -1,8 +1,22 @@
 {
   "images" : [
     {
-      "filename" : "Arrow 1.pdf",
       "idiom" : "universal"
+    },
+    {
+      "filename" : "NExt Button 2 Copy 2.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "NExt Button 2 Copy 2@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "NExt Button 2 Copy 2@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

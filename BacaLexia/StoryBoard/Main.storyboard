@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WVq-mM-TVC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WVq-mM-TVC">
     <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,72 +17,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background " translatesAutoresizingMaskIntoConstraints="NO" id="OAL-57-JL3">
-                                <rect key="frame" x="-77" y="-115" width="1454" height="1379"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background " translatesAutoresizingMaskIntoConstraints="NO" id="OAL-57-JL3">
+                                <rect key="frame" x="0.0" y="-65" width="1223" height="935"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vocal" translatesAutoresizingMaskIntoConstraints="NO" id="AU3-P5-Aad">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Vocal" translatesAutoresizingMaskIntoConstraints="NO" id="AU3-P5-Aad">
                                 <rect key="frame" x="61" y="130" width="424" height="416"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="416" id="7wT-NQ-qpU"/>
-                                    <constraint firstAttribute="width" constant="424" id="az4-gi-Ufn"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Konsonan" translatesAutoresizingMaskIntoConstraints="NO" id="zKc-1B-sN9">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Konsonan" translatesAutoresizingMaskIntoConstraints="NO" id="zKc-1B-sN9">
                                 <rect key="frame" x="551" y="189" width="424" height="416"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fwR-86-mFg">
-                                <rect key="frame" x="0.0" y="706" width="1194" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="fKg-pz-sOV"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liR-Zj-BMm">
-                                <rect key="frame" x="789" y="606" width="468" height="229"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="229" id="QTe-R0-DFD"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="koala"/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EpD-Ir-Lnl">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EpD-Ir-Lnl">
                                 <rect key="frame" x="76" y="96" width="1060" height="675"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JJn-Wd-Pvp">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JJn-Wd-Pvp">
                                 <rect key="frame" x="1071" y="96" width="65" height="68"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="eDf-Mb-m6b"/>
-                                    <constraint firstAttribute="height" constant="68" id="hnF-xE-8La"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kuT-4G-HYH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="AU3-P5-Aad" firstAttribute="top" secondItem="kuT-4G-HYH" secondAttribute="top" constant="130" id="BCk-1k-9h4"/>
-                            <constraint firstItem="kuT-4G-HYH" firstAttribute="trailing" secondItem="JJn-Wd-Pvp" secondAttribute="trailing" constant="58" id="DEE-Ek-peH"/>
-                            <constraint firstItem="EpD-Ir-Lnl" firstAttribute="top" secondItem="JJn-Wd-Pvp" secondAttribute="top" id="DWQ-9i-ON7"/>
-                            <constraint firstItem="kuT-4G-HYH" firstAttribute="trailing" secondItem="zKc-1B-sN9" secondAttribute="trailing" constant="219" id="IV7-NT-flF"/>
-                            <constraint firstItem="zKc-1B-sN9" firstAttribute="top" secondItem="kuT-4G-HYH" secondAttribute="top" constant="189" id="MLB-h7-jUG"/>
-                            <constraint firstItem="liR-Zj-BMm" firstAttribute="leading" secondItem="kuT-4G-HYH" secondAttribute="leading" constant="789" id="Myk-wt-i5C"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="fwR-86-mFg" secondAttribute="bottom" constant="-20" id="OTO-MD-BNK"/>
-                            <constraint firstItem="EpD-Ir-Lnl" firstAttribute="trailing" secondItem="JJn-Wd-Pvp" secondAttribute="trailing" id="WAi-13-gHs"/>
-                            <constraint firstItem="EpD-Ir-Lnl" firstAttribute="top" secondItem="kuT-4G-HYH" secondAttribute="top" constant="96" id="WyD-oN-pkP"/>
-                            <constraint firstItem="kuT-4G-HYH" firstAttribute="bottom" secondItem="EpD-Ir-Lnl" secondAttribute="bottom" constant="43" id="YDt-1Z-4Ek"/>
-                            <constraint firstItem="fwR-86-mFg" firstAttribute="leading" secondItem="kuT-4G-HYH" secondAttribute="leading" id="Yf1-wU-KSk"/>
-                            <constraint firstItem="OAL-57-JL3" firstAttribute="leading" secondItem="dBx-1s-VY7" secondAttribute="leadingMargin" constant="-97" id="bEr-BA-j8w"/>
-                            <constraint firstItem="EpD-Ir-Lnl" firstAttribute="leading" secondItem="kuT-4G-HYH" secondAttribute="leading" constant="76" id="c7e-Xy-40J"/>
-                            <constraint firstItem="liR-Zj-BMm" firstAttribute="top" secondItem="zKc-1B-sN9" secondAttribute="bottom" constant="1" id="cXz-vi-j41"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="liR-Zj-BMm" secondAttribute="bottom" constant="-21" id="gPX-Ax-p24"/>
-                            <constraint firstItem="zKc-1B-sN9" firstAttribute="leading" secondItem="AU3-P5-Aad" secondAttribute="trailing" constant="66" id="nep-Rk-Oxa"/>
-                            <constraint firstItem="fwR-86-mFg" firstAttribute="centerX" secondItem="dBx-1s-VY7" secondAttribute="centerX" id="sOw-ao-839"/>
-                            <constraint firstItem="OAL-57-JL3" firstAttribute="top" secondItem="dBx-1s-VY7" secondAttribute="top" constant="-115" id="ydY-S0-NJD"/>
-                            <constraint firstItem="AU3-P5-Aad" firstAttribute="leading" secondItem="kuT-4G-HYH" secondAttribute="leading" constant="61" id="ywr-vP-E0q"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="background" destination="OAL-57-JL3" id="p3k-sO-Ynu"/>
-                        <outlet property="bantuanBoard" destination="fwR-86-mFg" id="n3Z-6f-MHY"/>
                         <outlet property="konsonanButton" destination="zKc-1B-sN9" id="zLH-Kq-q2O"/>
-                        <outlet property="maskot" destination="liR-Zj-BMm" id="xNz-v4-e5i"/>
                         <outlet property="panduanMain" destination="EpD-Ir-Lnl" id="Is7-jh-68P"/>
                         <outlet property="vocalButton" destination="AU3-P5-Aad" id="HlT-pg-Pqf"/>
                         <outlet property="xxButton" destination="JJn-Wd-Pvp" id="iFB-DT-3zo"/>
@@ -94,10 +55,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background " width="1454" height="1379"/>
+        <image name="Background " width="1194" height="834"/>
         <image name="Konsonan" width="420" height="420"/>
         <image name="Vocal" width="420" height="420"/>
-        <image name="koala" width="414" height="229"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

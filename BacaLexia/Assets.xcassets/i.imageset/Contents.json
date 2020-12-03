@@ -1,8 +1,22 @@
 {
   "images" : [
     {
-      "filename" : "i.pdf",
       "idiom" : "universal"
+    },
+    {
+      "filename" : "i kecil.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "i kecil@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "i kecil@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

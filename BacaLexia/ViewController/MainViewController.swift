@@ -20,10 +20,10 @@ class MainViewController: UIViewController {
     @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var vocalButton: UIImageView!
     @IBOutlet weak var konsonanButton: UIImageView!
-    @IBOutlet weak var bantuanBoard: UIImageView!
     
     
-    @IBOutlet weak var maskot: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -166,9 +166,9 @@ class MainViewController: UIViewController {
     }
     func bantuanDisplay(){
         let gesture =  UITapGestureRecognizer(target: self, action: #selector(maskotTapped))
-        maskot.isUserInteractionEnabled = true
+//        maskot.isUserInteractionEnabled = true
         gesture.numberOfTapsRequired = 1
-        maskot.addGestureRecognizer(gesture)
+//        maskot.addGestureRecognizer(gesture)
     }
     func xButtonAction(){
         let gesture =  UITapGestureRecognizer(target: self, action: #selector(xxButtonTapped))
@@ -194,7 +194,7 @@ class MainViewController: UIViewController {
                 
      //   playSound(soundName: "intruksiDengar")
             }else{
-                bantuanBoard.image = nil
+//                bantuanBoard.image = nil
             }
            
     

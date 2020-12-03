@@ -21,8 +21,6 @@ class PilihVViewController: UIViewController {
 
     
     @IBOutlet weak var background: UIImageView!
-    @IBOutlet weak var maskot: UIButton!
-    @IBOutlet weak var bantuanBoard: UIImageView!
     @IBOutlet weak var arrowButton: UIImageView!
     @IBOutlet weak var aButton: UIImageView!
     
@@ -232,13 +230,13 @@ class PilihVViewController: UIViewController {
         background.addGestureRecognizer(gesture)
     }
     @objc func backgroundImageTapped(){
-        bantuanBoard.image = nil
+//        bantuanBoard.image = nil
     }
     func bantuanDisplay(){
         let gesture =  UITapGestureRecognizer(target: self, action: #selector(maskotTapped))
-        maskot.isUserInteractionEnabled = true
+//        maskot.isUserInteractionEnabled = true
         gesture.numberOfTapsRequired = 1
-        maskot.addGestureRecognizer(gesture)
+//        maskot.addGestureRecognizer(gesture)
     }
     func playSound(soundName: String) {
         let url = Bundle.main.url(forResource: soundName, withExtension: "wav")
@@ -248,10 +246,10 @@ class PilihVViewController: UIViewController {
     @objc func maskotTapped(){
             isMascotShow.toggle()
             if(isMascotShow) {
-                bantuanBoard.image = #imageLiteral(resourceName: "pilhHurufBantuan")
+//                bantuanBoard.image = #imageLiteral(resourceName: "pilhHurufBantuan")
                 playSound(soundName: "instruksiPilihHuruf")
             }else{
-                bantuanBoard.image = nil
+//                bantuanBoard.image = nil
             }
     }
     
