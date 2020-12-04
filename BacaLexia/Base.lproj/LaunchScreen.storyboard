@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -16,16 +16,44 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="BMj-Qd-aVl">
+                                <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                                <color key="backgroundColor" red="0.52941176469999995" green="0.80784313730000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.52941176470588236" green="0.80784313725490198" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="834" id="bys-8k-w52"/>
+                                    <constraint firstAttribute="width" constant="1194" id="cvs-ey-bAL"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="6rV-Kn-Gqt">
+                                <rect key="frame" x="237" y="299" width="721" height="237"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="721" id="FoU-36-FKa"/>
+                                    <constraint firstAttribute="height" constant="237" id="by3-nd-d3c"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6rV-Kn-Gqt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="237" id="1KZ-sM-niK"/>
+                            <constraint firstItem="BMj-Qd-aVl" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="28B-bH-gx4"/>
+                            <constraint firstItem="6rV-Kn-Gqt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="299" id="Jia-Ur-Qfu"/>
+                            <constraint firstItem="BMj-Qd-aVl" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Jt4-xX-HsF"/>
+                            <constraint firstItem="BMj-Qd-aVl" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="Vo9-Hc-qfy"/>
+                            <constraint firstItem="BMj-Qd-aVl" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="W4Y-5e-tqM"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.763819095477388" y="374.8201438848921"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Logo" width="1444" height="542"/>
+        <image name="launchBackGround" width="1194" height="834"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
