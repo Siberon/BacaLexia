@@ -17,39 +17,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background " id="zR1-pG-usY">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" id="zR1-pG-usY">
                                 <rect key="frame" x="-81" y="0.0" width="1457" height="1149"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menulis" id="GSC-0F-Rqa">
-                                <rect key="frame" x="254" y="-97" width="678" height="255"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 6boardbesar" id="tUn-22-AZB">
-                                <rect key="frame" x="215" y="151" width="760" height="423"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Text Cloud 4" id="GSC-0F-Rqa">
+                                <rect key="frame" x="192" y="-95" width="852" height="325"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="OpL-ms-Y4A" userLabel="HurufImage">
-                                <rect key="frame" x="443" y="184" width="306" height="341"/>
+                                <rect key="frame" x="407" y="297" width="420" height="445"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfZ-QN-39R" customClass="PKCanvasView">
-                                <rect key="frame" x="443" y="184" width="306" height="341"/>
+                                <rect key="frame" x="407" y="297" width="420" height="445"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow3" translatesAutoresizingMaskIntoConstraints="NO" id="v7i-KA-RRk">
-                                <rect key="frame" x="29" y="34" width="110" height="110"/>
+                                <rect key="frame" x="40" y="40" width="110" height="110"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eYH-Na-woM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="v7i-KA-RRk" firstAttribute="top" secondItem="eYH-Na-woM" secondAttribute="top" constant="34" id="Ses-pe-bbJ"/>
-                            <constraint firstItem="qfZ-QN-39R" firstAttribute="bottom" secondItem="OpL-ms-Y4A" secondAttribute="bottom" id="TBA-8D-3yp"/>
-                            <constraint firstItem="v7i-KA-RRk" firstAttribute="leading" secondItem="eYH-Na-woM" secondAttribute="leading" constant="29" id="W57-IF-NcP"/>
-                            <constraint firstItem="qfZ-QN-39R" firstAttribute="trailing" secondItem="OpL-ms-Y4A" secondAttribute="trailing" id="YTz-Og-4Rk"/>
-                            <constraint firstItem="GSC-0F-Rqa" firstAttribute="leading" secondItem="v7i-KA-RRk" secondAttribute="trailing" constant="115" id="dE5-AV-Fs7"/>
-                            <constraint firstItem="qfZ-QN-39R" firstAttribute="leading" secondItem="OpL-ms-Y4A" secondAttribute="leading" id="lBs-Uw-Hg2"/>
-                            <constraint firstItem="qfZ-QN-39R" firstAttribute="top" secondItem="OpL-ms-Y4A" secondAttribute="top" id="oYo-dE-0Gz"/>
+                            <constraint firstItem="qfZ-QN-39R" firstAttribute="leading" secondItem="OpL-ms-Y4A" secondAttribute="leading" id="NiW-Wg-PI0"/>
+                            <constraint firstItem="v7i-KA-RRk" firstAttribute="top" secondItem="eYH-Na-woM" secondAttribute="top" constant="40" id="VLv-v2-W5t"/>
+                            <constraint firstItem="qfZ-QN-39R" firstAttribute="top" secondItem="OpL-ms-Y4A" secondAttribute="top" id="Y4y-Iu-nRM"/>
+                            <constraint firstItem="v7i-KA-RRk" firstAttribute="leading" secondItem="eYH-Na-woM" secondAttribute="leading" constant="40" id="r1y-L5-yJ2"/>
+                            <constraint firstItem="qfZ-QN-39R" firstAttribute="bottom" secondItem="OpL-ms-Y4A" secondAttribute="bottom" id="uk6-2D-Sgl"/>
+                            <constraint firstItem="qfZ-QN-39R" firstAttribute="trailing" secondItem="OpL-ms-Y4A" secondAttribute="trailing" id="wWf-xZ-kkF"/>
                         </constraints>
                     </view>
                     <connections>
@@ -65,10 +60,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background " width="1194" height="834"/>
-        <image name="Group 6boardbesar" width="768" height="424"/>
+        <image name="Background" width="1194" height="834"/>
+        <image name="Text Cloud 4" width="940" height="358"/>
         <image name="arrow3" width="110" height="110"/>
-        <image name="menulis" width="852" height="325"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -44,7 +44,7 @@ class AhurufViewController: UIViewController {
         //updateView()
       
         
-        nameBoard.image = #imageLiteral(resourceName: "mendengarBoard")
+        nameBoard.image = #imageLiteral(resourceName: "Text Cloud 2")
     }
     
     func animationfromRight(){
@@ -268,7 +268,7 @@ class AhurufViewController: UIViewController {
         if(state == 0){
             state = 1
 //            prevActivity.isHidden = false
-            nameBoard.image = #imageLiteral(resourceName: "mengucapBoard")
+            nameBoard.image = #imageLiteral(resourceName: "Text CLoud 3")
             playSound(soundName: "mengucapkan")
 //            prevActivity.image = #imageLiteral(resourceName: "arrow2")
 //            bantuanBoard.image = nil
@@ -288,6 +288,7 @@ class AhurufViewController: UIViewController {
     
     @objc func maskotTapped(){
         if(state == 0){
+            nameBoard.image = #imageLiteral(resourceName: "Text CLoud 3")
             isMascotShow.toggle()
             if(isMascotShow) {
 //                bantuanBoard.image = #imageLiteral(resourceName: "tekanGelembungDengar")

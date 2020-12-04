@@ -27,8 +27,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bantuanDisplay()
-        xButtonAction()
+      //  bantuanDisplay()
+     //   xButtonAction()
         
         var btn1 : UIView!
         btn1 = UIView(frame: vocalButton.frame)
@@ -154,7 +154,7 @@ class MainViewController: UIViewController {
 //        self.present(newViewController, animated: false, completion: nil)
         }
     
-    func backgroundTap(){
+ /*   func backgroundTap(){
         let gesture =  UITapGestureRecognizer(target: self, action: #selector(backgroundImageTapped))
         background.isUserInteractionEnabled = true
         gesture.numberOfTapsRequired = 1
@@ -198,7 +198,7 @@ class MainViewController: UIViewController {
             }
            
     
-    }
+    } */
     
     
 }

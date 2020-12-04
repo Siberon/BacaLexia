@@ -45,7 +45,7 @@
 		F61B0A3C255E5BA00056A8AA /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = F61B0A3A255E5BA00056A8AA /* A.wav */; };
 		F61B0A3D255E5BA00056A8AA /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = F61B0A3B255E5BA00056A8AA /* E.wav */; };
 		F61B0A42255E61010056A8AA /* AHurufExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61B0A41255E61010056A8AA /* AHurufExtention.swift */; };
-		F67771AA255D6DA1000E7924 /* PilihVViewController+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67771A9255D6DA1000E7924 /* PilihVViewController+Extention.swift */; };
+		F67771AA255D6DA1000E7924 /* Confeti.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67771A9255D6DA1000E7924 /* Confeti.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,7 +110,7 @@
 		F61B0A3A255E5BA00056A8AA /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
 		F61B0A3B255E5BA00056A8AA /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
 		F61B0A41255E61010056A8AA /* AHurufExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHurufExtention.swift; sourceTree = "<group>"; };
-		F67771A9255D6DA1000E7924 /* PilihVViewController+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PilihVViewController+Extention.swift"; sourceTree = "<group>"; };
+		F67771A9255D6DA1000E7924 /* Confeti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confeti.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,11 +181,11 @@
 			children = (
 				70777BF625555C1900E78239 /* MainViewController.swift */,
 				7065FAF225532B09004ABF4A /* PilihVViewController.swift */,
-				F67771A9255D6DA1000E7924 /* PilihVViewController+Extention.swift */,
 				701986BD2559AF6A00DA938E /* PilihKonsViewController.swift */,
 				7065FAF725532B29004ABF4A /* AhurufViewController.swift */,
 				F61B0A41255E61010056A8AA /* AHurufExtention.swift */,
 				CD7844DE2552D01C00BCA0E5 /* MenulisAViewController.swift */,
+				F67771A9255D6DA1000E7924 /* Confeti.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -416,7 +416,7 @@
 				7065FAF325532B09004ABF4A /* PilihVViewController.swift in Sources */,
 				CD7D9FBE254FD39A008FC254 /* SceneDelegate.swift in Sources */,
 				CD7844DF2552D01C00BCA0E5 /* MenulisAViewController.swift in Sources */,
-				F67771AA255D6DA1000E7924 /* PilihVViewController+Extention.swift in Sources */,
+				F67771AA255D6DA1000E7924 /* Confeti.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
